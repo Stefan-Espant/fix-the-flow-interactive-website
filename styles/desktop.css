@@ -1,0 +1,256 @@
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .categorie {
+    display: flex;
+    width: 75%;
+    margin: 0.4em 0.1em;
+  }
+
+  .categorie svg {
+    margin: 0.8em;
+    display: block;
+    flex: 0 0 3.6em;
+    height: auto;
+    fill: var(--c-primary);
+  }
+
+  .categorie .link-disabled svg {
+    fill: #ddd;
+  }
+
+  .categorie p {
+    margin: auto 0.8em;
+    color: var(--c-invert);
+  }
+
+  /* layout */
+
+  main {
+    width: 66vw;
+    display: block;
+    margin: auto;
+  }
+
+  main a {
+    padding: 0.8em;
+    display: inline-block;
+  }
+
+  .index {
+    margin: 6em auto;
+  }
+
+  footer {
+    width: 100vw;
+    min-height: 10vh;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    background-color: var(--c-primary);
+    position: static;
+    left: 0;
+    bottom: 0;
+  }
+
+  .footer-sticky {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  footer .emotion-group {
+    margin: 1em;
+    max-width: 45vw;
+    display: block;
+  }
+
+  footer nav {
+    display: flex;
+    width: fit-content;
+  }
+
+  footer nav .footer-links {
+    display: block;
+  }
+
+  .footer-links a svg {
+    fill: var(--c-light);
+  }
+
+  .footer-links a:hover svg {
+    fill: var(--c-primary);
+  }
+
+  .footer-links a:focus svg {
+    fill: var(--c-info);
+  }
+
+  footer h2,
+  h3,
+  p {
+    color: var(--c-light);
+  }
+
+  .footer-links a {
+    display: block;
+    width: fit-content;
+    padding: 0.4em;
+    margin: 0.8em;
+    color: var(--c-light);
+    outline: none;
+  }
+
+  #desktop {
+    display: block;
+  }
+
+  .subject {
+    display: inline-block;
+    margin: 4em 0;
+  }
+
+  .toptab {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .tab {
+    content: "";
+    width: 50%;
+    height: 3em;
+    display: block;
+    background-color: var(--c-default);
+    margin: 0;
+    border-radius: 3em 10em 0 0;
+  }
+
+  .curve {
+    content: "";
+    width: 3em;
+    height: 3em;
+    display: block;
+    background-color: var(--c-accent-primary);
+    margin: 0 0 0 -0.8em;
+    border-radius: 0 5em 0 5em;
+    z-index: 1;
+  }
+
+  .curve-bg {
+    content: "";
+    width: 3em;
+    height: 2em;
+    display: block;
+    background-color: var(--c-default);
+    margin: 0 0 0 -3em;
+    border-radius: 2em 5em 0 0;
+    z-index: 0;
+  }
+
+  .cntt {
+    width: 30vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em auto;
+    flex-wrap: wrap;
+    float: left;
+  }
+
+  #after-curve {
+    width: 100vw;
+    height: 2.5em;
+    background-color: var(--c-default);
+    float: inline-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+  .wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .intro {
+    width: 50vw;
+    margin: auto;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    height: auto;
+  }
+
+  .options {
+    width: 30vw;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .option-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .folder {
+    min-height: 25em;
+  }
+
+  .subject-img {
+    width: 100%;
+    margin: 2em 0 1em;
+    border-radius: var(--border-radius-default);
+    object-fit: cover;
+  }
+
+  /* Interface */
+  .ui-settings {
+    display: flex;
+    align-items: center;
+    float: inline-end;
+    padding: 0 2em;
+    margin: 0em auto;
+    position: absolute;
+    right: 1em;
+    height: 1em;
+  }
+
+  .back-2-top {
+    right: 2em;
+    bottom: 2em;
+  }
+
+  /* Typografie */
+  h1 {
+    font-size: 2em;
+    max-width: 20em;
+  }
+
+  .toolgankelijk {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}

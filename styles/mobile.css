@@ -1,0 +1,490 @@
+@media (min-width: 320px) and (max-width: 440px) {
+  .categorie {
+    display: block;
+    width: auto;
+    margin: 0.5em 0.1em;
+  }
+
+  .categorie svg {
+    margin: 0.8em auto;
+    display: block;
+    flex: 0 0 3.6em;
+    height: auto;
+    fill: var(--c-primary);
+  }
+
+  .categorie .link-disabled svg {
+    fill: var(--c-default);
+  }
+
+  .categorie p {
+    margin: auto 0.8em;
+    color: var(--c-invert);
+  }
+
+  /* Layout */
+
+  .subcat {
+    display: flex;
+    margin: 0.8em 0;
+    flex-wrap: wrap;
+  }
+  
+  .subcat-btn {
+    width: auto;
+    height: auto;
+    color: var(--c-light);
+    border: none;
+    cursor: pointer;
+    text-align: end;
+    margin: 0.2em 0.4em;
+    padding: 0.4em 0.6em;
+    border-radius: var(--border-radius-default);
+    transition: 0.5s;
+  }
+
+  /* layout */
+
+  main {
+    display: block;
+    margin: 4em auto;
+  }
+
+  main a {
+    padding: 0.8em;
+    display: inline-block;
+  }
+
+  main .searchbar {
+    width: 90%;
+    margin: 2em auto 3em;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  footer {
+    width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    display: inline-block;
+    margin: 0;
+    background-color: var(--c-primary);
+    position: static;
+    z-index: 2;
+
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
+    display: block;
+  }
+
+  footer nav {
+    display: block;
+    width: auto;
+    margin: 1em;
+  }
+
+  footer nav .footer-links {
+    display: block;
+    margin: 1em 0;
+    width: fit-content;
+  }
+
+  footer h2,
+  h3,
+  p {
+    color: var(--c-light);
+  }
+
+  footer nav a {
+    display: inline-block;
+    margin: auto;
+  }
+
+  footer a:hover i {
+    color: var(--c-primary);
+  }
+
+  footer nav .icon {
+    display: flex;
+    margin: auto;
+    width: auto;
+  }
+
+  footer .social-media-group {
+    margin: 1em;
+  }
+
+  footer .social-media-group a {
+    margin: 0 0.4em;
+    color: var(--c-white);
+  }
+  
+  #emotion-group {
+    display: block;
+    width: fit-content;
+  }
+
+  .subject {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  aside .cntt {
+    width: 10vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .toptab {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .tab {
+    content: '';
+    width: 5em;
+    height: 3em;
+    display: block;
+    background-color: var(--c-default);
+    margin: 0;
+    border-radius: 3em 10em 0 0;
+  }
+  
+  .curve {
+    content: '';
+    width: 3em;
+    height: 3em;
+    display: block;
+    background-color: var(--c-accent-primary);
+    margin: 0 0 0 -0.8em;
+    border-radius: 0 5em 0 5em;
+    z-index: 1;
+  }
+  
+  .curve-bg  {
+    content: '';
+    width: 3em;
+    height: 2em;
+    display: block;
+    background-color: var(--c-default);
+    margin: 0 0 0 -3em;
+    border-radius: 2em 5em 0 0;
+    z-index: 0;
+  }
+
+  .wrapper {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .intro {
+    width: 80vw;
+    margin: 1em 1em;
+  }
+
+  .options {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .option-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .subject-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Typografie */
+
+  h1 {
+    font-size: 2em;
+    max-width: 20em;
+  }
+
+  .toolgankelijk {
+    font-size: 2em;
+  }
+
+  .emotion {
+    aspect-ratio: 1/1;
+    font-size: 3em;
+  }
+
+  .folder {
+    min-height: 25em;
+    padding: 1.6em 1em;
+  }
+
+}
+
+@media (min-width: 441px) and (max-width: 767px) {
+  .categorie {
+    display: flex;
+    width: 12em;
+    margin: 0.8em;
+  }
+
+  .categorie svg {
+    margin: 0.8em 0.2em;
+    display: block;
+    width: 3.6em;
+    height: auto;
+    fill: var(--c-primary);
+  }
+
+  .categorie p {
+    margin: auto 0.8em;
+    color: var(--c-invert);
+  }
+
+  /* layout */
+
+  main {
+    display: block;
+    margin: 4em auto;
+  }
+
+  footer {
+    width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    display: inline-block;
+    margin: 0;
+    background-color: var(--c-primary);
+    position: static;
+    z-index: 1;
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
+    display: flex;
+  }
+
+  footer nav {
+    display: block;
+    width: auto;
+    margin: 1em;
+  }
+
+  footer nav .footer-links {
+    display: block;
+    margin: 0em 0 3em;
+    width: max-content;
+  }
+
+  footer h2,
+  h3,
+  h4 {
+    color: var(--c-light);
+  }
+
+  footer nav a {
+    display: inline-block;
+    margin: auto;
+  }
+
+  footer nav .icon {
+    display: flex;
+    margin: auto;
+    width: auto;
+  }
+
+  footer .social-media-group {
+    margin: 1em;
+  }
+
+  footer .social-media-group a {
+    margin: 0 0.4em;
+  }
+
+  .subject {
+    display: block;
+  }
+
+  aside {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .cntt {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2.5em auto;
+    flex-wrap: wrap;
+  }
+
+  .wrapper {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .intro {
+    width: 80vw;
+    margin: 1em 1em;
+  }
+
+  .options {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .option-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8em 0;
+  }
+
+  /* Interface */
+
+  .ui-settings {
+    display: inline-flex;
+    align-items: center;
+    float: inline-end;
+    padding: 0 2em;
+    margin: 0em;
+    position: absolute;
+    right: 0em;
+    height: 1em;
+  }
+  }
+
+  /* Typografie */
+
+@media (min-width: 380px) and (max-width: 480px) {
+
+    .toptab {
+        display: flex;
+        align-items: baseline;
+      }
+      
+      .tab {
+        content: '';
+        width: 8em;
+        height: 3em;
+        display: block;
+        background-color: var(--c-default);
+        margin: 0;
+        border-radius: 3em 10em 0 0;
+      }
+      
+      .curve {
+        content: '';
+        width: 3em;
+        height: 3em;
+        display: block;
+        background-color: var(--c-accent-primary);
+        margin: 0 0 0 -0.8em;
+        border-radius: 0 5em 0 5em;
+        z-index: 1;
+      }
+      
+      .curve-bg  {
+        content: '';
+        width: 3em;
+        height: 2em;
+        display: block;
+        background-color: var(--c-default);
+        margin: 0 0 0 -3em;
+        border-radius: 2em 5em 0 0;
+        z-index: 0;
+      }
+
+      #desktop {
+        display: none;
+      }
+
+      footer {
+        display: inline-block;
+        margin: 0;
+        width: 100vw;
+        position: static;
+        left: 0;
+        bottom: 0;
+      }
+    
+      footer nav {
+        display: block;
+        width: auto;
+        margin: 1em;
+      }
+    
+      footer nav .footer-links {
+        display: block;
+        margin: 0em 0 3em;
+        width: 90vw;
+      }
+
+      .footer-links a {
+        display: block;
+        width: fit-content;
+        padding: 0.4em;
+        margin: 0.8em;
+        fill: var(--c-light);
+      }
+
+      .footer-links a:hover svg {
+        fill: var(--c-primary);
+      }
+    
+      .footer-links a:focus svg {
+        fill: var(--c-primary);
+      }
+    
+      footer nav a {
+        display: inline-block;
+        margin: auto;
+      }
+      
+    
+      footer nav .icon {
+        display: block;
+        margin: auto;
+        width: auto;
+      }
+    
+      footer .social-media-group {
+        margin: 1em;
+      }
+    
+      footer .social-media-group a {
+        margin: 0 0.4em;
+      }
+}
