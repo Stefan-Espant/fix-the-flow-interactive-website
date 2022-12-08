@@ -438,30 +438,18 @@
         </article>
       </div>
     </section>
-    <div class="searchbar">
-      <label for="site-search">Zoek op de site:</label>
-      <span>
-      <input type="search" id="site-search">
-      <button class="subcat-btn">
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6ZM9.47655 10.8907C8.49573 11.5892 7.29584 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 7.29582 11.5892 8.4957 10.8908 9.47652L14.3501 12.9359C14.7406 13.3264 14.7406 13.9595 14.3501 14.3501C13.9596 14.7406 13.3264 14.7406 12.9359 14.3501L9.47655 10.8907Z" fill=""/>
-        </svg>          
-         Zoeken
-      </button>
-      </span>
-    </div>
   </main>
   <footer>
     <div>
-      <div class="emotion-group" aria-label="">
+      <section class="emotion-group" aria-label="">
         <h2 aria-label="Heeft deze pagina geholpen?">
           Heeft deze pagina geholpen?
         </h2>
         <p aria-label="Maak een keuze uit de onderstaande knoppen.">
           Maak een keuze uit de onderstaande knoppen
         </p>
-        <div class="emotion-group-btns" aria-label="Hoe vind je de website?" id="emotion-group">
-          <button class="btn-emotion bg-green" aria-label="blije smiley." onclick="sendEmotion()">
+        <div class="emotion-group-buttons">
+          <button class="btn-emotion bg-green" aria-label="blije smiley." onclick="switchSections()">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
@@ -477,7 +465,7 @@
                 fill="" />
             </svg>
           </button>
-          <button class="btn-emotion bg-yellow" aria-label="neutrale smiley." onclick="sendEmotion()">
+          <button class="btn-emotion bg-yellow" aria-label="neutrale smiley." onclick="switchSections()">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
@@ -493,7 +481,7 @@
                 fill="" />
             </svg>
           </button>
-          <button class="btn-emotion bg-red" aria-label="ongelukkige smiley." onclick="sendEmotion()">
+          <button class="btn-emotion bg-red" aria-label="ongelukkige smiley." onclick="switchSections()">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
@@ -510,7 +498,11 @@
             </svg>
           </button>
         </div>
-      </div>
+        <div class="reaction-text hide">
+          <br>
+          <p>Bedankt voor uw feedback</p>
+        </div>
+      </section>
       <nav>
         <div class="footer-links">
           <a href="mailto:info@vervoeregio.nl?subject=Feedback%20over%20Toolgankelijk"
@@ -556,8 +548,8 @@
           </h3>
           <div>
             <a target="_blank"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-              class="fb-xfbml-parse-ignore" aria-label="Deel deze website op Facebook.">
+              href="https://www.linkedin.com"
+              data-url="https://www.linkedin.com">
               <svg width="44" height="44" viewBox="0 0 44 44" fill="" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_347_181)">
                   <path
@@ -570,7 +562,6 @@
                   </clipPath>
                 </defs>
               </svg>
-
             </a>
             <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world"
               aria-label="Deel deze website op Twitter.">

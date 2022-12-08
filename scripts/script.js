@@ -22,30 +22,27 @@ allButtons.forEach(item => {
 //const increaseFontSize = document.querySelector('p')
 
 function fontSize() {
-    const textincrease = document.getElementById("fontIncrease")
+    const textincrease = document.querySelector("#fontIncrease")
     textincrease.classList.toggle('text-large')
     textincrease.style.fontSize = textincrease.style.fontSize === '200%' ? '100%' : '200%'
 };
 
 const contrastTrigger = document.querySelector('.contrast-trigger');
 
-// function colorChange() {
-//     const allHeadingOne = document.querySelector('h1');
-//     allHeadingOne.classList.toggle('dark-contrast');
-// };
 contrastTrigger.addEventListener('click', () => {
     body.classList.toggle('dark-contrast')
 });
 
+// Variabelen declareren
+const emotionButtons = document.querySelector('.emotion-group-buttons')
+const emotionReaction = document.querySelector('.reaction-text')
 
-function sendEmotion() {
-    const element = document.getElementById('emotion-group')
-    const html = `
-        <div style="height: 3em;">
-            <h3>Bedankt voor uw feedback</h3>
-        </div>
-    `
-    element.innerHTML = html
-};
+// Event listeners
+emotionReaction.addEventListener('click', switchSections)
 
 
+// Functies voor afhandeling
+function switchSections(){
+    emotionReaction.classList.remove('hide')
+    emotionButtons.classList.add('hide')
+}

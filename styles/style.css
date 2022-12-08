@@ -130,6 +130,11 @@ footer .social-media-group {
   display: block;
 }
 
+.reaction-text {
+  display: block;
+  margin: 0;
+}
+
 .social-media-group div {
   margin: auto;
   padding: 0.4em;
@@ -699,9 +704,10 @@ p {
   display: block;
   width: fit-content;
   margin: 1em;
+  transition: 0.4s 2s ease-in-out;
 }
 
-.emotion-group-btns {
+.emotion-group-buttons {
   margin: 1em 0;
   justify-content: flex-start;
 }
@@ -935,5 +941,3 @@ article {
     width: 33vw;
   }
 }
-
-::input:
