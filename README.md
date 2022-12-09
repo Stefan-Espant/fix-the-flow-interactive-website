@@ -2,8 +2,8 @@
 Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Handleiding voor partners Vervoerregio Amsterdam
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Handleiding voor partners Vervoerregio Amsterdam
 
 ## User Story
 <!-- Schrijf de user story waar je aan hebt gewerkt  -->
@@ -14,15 +14,25 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-<img width="1512" alt="Schermafbeelding 2022-12-09 om 12 18 03" src="https://user-images.githubusercontent.com/89298385/206691553-9e41a9fc-3ad5-484d-8111-9563b1fcebfe.png">
 <img width="1512" alt="Schermafbeelding 2022-12-09 om 12 18 34" src="https://user-images.githubusercontent.com/89298385/206691565-adc4f474-662a-4977-8756-2e5ac7fd0336.png">
-
 
 https://stefan-espant.github.io/fix-the-flow-interactive-website/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
+### html
+
+
+### css
+
+
+### javascript
+
+
+## Bronnen
+
+[docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 
 ## Licentie
