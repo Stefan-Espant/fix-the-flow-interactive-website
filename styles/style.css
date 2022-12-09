@@ -132,7 +132,6 @@ footer .social-media-group {
 
 .reaction-text {
   display: block;
-  margin: 0;
 }
 
 .social-media-group div {
@@ -704,7 +703,7 @@ p {
   display: block;
   width: fit-content;
   margin: 1em;
-  transition: 0.4s 2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .emotion-group-buttons {
@@ -720,6 +719,35 @@ p {
   font-size: 2em;
   margin: 0.2em;
 }
+
+.btn-emotion svg:first-child {
+  display: block;
+  transition: 1s ease-in-out;
+}
+
+.btn-emotion svg:last-child {
+  display: none;
+}
+
+.btn-emotion:hover svg:first-child {
+  display: none;
+}
+
+.btn-emotion:hover svg:last-child {
+  display: block;
+  transition: 1s 1s ease-in-out;
+}
+
+@keyframes feedback-expression {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+}
+}
+  
 
 .btn-emotion:hover svg {
   fill: var(--c-accent-tetriary);
