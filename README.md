@@ -9,8 +9,6 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md) -->
 <!-- Schrijf de user story waar je aan hebt gewerkt  -->
 > Als gebruiker wil ik een checklist kunnen downloaden om mijn eigen webiste te laten voldoen aan de WCAG criteria
 
-> Als gebruiker wil ik de checklist kunnen afdrukken om het tastbaar te kunnen ervaren
-
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
