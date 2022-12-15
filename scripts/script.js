@@ -40,9 +40,30 @@ const emotionReaction = document.querySelector('.reaction-text')
 // Event listeners
 emotionReaction.addEventListener('click', switchSections)
 
-
 // Functies voor afhandeling
 function switchSections(){
     emotionReaction.classList.remove('hide')
     emotionButtons.classList.add('hide')
 }
+
+// Back to top button selecteren
+const backToTopButton = document.querySelector('.back-2-top')
+
+// Whenever end users scroll down 10px from the beginning of the web page, then back to top button visible
+window.onscroll = function() {
+    scrollfunction()
+};
+
+// Functie voor afhandeling
+function scrollfunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 100) {
+        backToTopButton.classList.remove('opacity-zero')
+    } else {
+        backToTopButton.classList.add('opacity-zero')
+    }
+}
+
+function Scrollback_topfunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }

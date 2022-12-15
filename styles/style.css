@@ -14,12 +14,22 @@
   --c-info: #606eb3;
 
   /* border */
-
   --border-radius-min: 0.2em;
   --border-radius-default: 0.4em;
   --border-radius-round: 50%;
 
   /* Margin & padding */
+  --margin-min: 0.2em;
+  --margin-default: 0.4em;
+  --margin-large: 0.8em;
+  --margin-x-large: 1em;
+  --margin-auto: auto;
+
+  --padding-min: 0.2em;
+  --padding-default: 0.4em;
+  --padding-large: 0.8em;
+  --padding-x-large: 1em;
+  --padding-auto: auto;
 
 
 
@@ -90,6 +100,11 @@ p {
   color: var(--c-light);
 }
 
+.footer-sticky {
+  position: absolute;
+  bottom: 0;
+}
+
 .footer-links a {
   display: block;
   width: fit-content;
@@ -132,12 +147,14 @@ footer .social-media-group {
 
 .reaction-text {
   display: block;
+  margin: 0;
 }
 
 .social-media-group div {
   margin: auto;
   padding: 0.4em;
   display: flex;
+  align-items: center;
 }
 
 .social-media-group div a {
@@ -219,8 +236,9 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: fixed;
   float: right;
+  z-index: 100;
 }
 
 .back-2-top svg {
@@ -703,7 +721,6 @@ p {
   display: block;
   width: fit-content;
   margin: 1em;
-  transition: 0.4s ease-in-out;
 }
 
 .emotion-group-buttons {
@@ -713,7 +730,7 @@ p {
 
 .btn-emotion svg {
   fill: var(--c-light);
-  transition: 0.8s ease-in-out;
+  transition: 0.2s ease-in-out;
   width: 1em;
   aspect-ratio: 1/1;
   font-size: 2em;
@@ -721,33 +738,30 @@ p {
 }
 
 .btn-emotion svg:first-child {
-  display: block;
-  transition: 1s ease-in-out;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+  position: absolute;
 }
 
 .btn-emotion svg:last-child {
-  display: none;
+  opacity: 0;
 }
 
 .btn-emotion:hover svg:first-child {
-  display: none;
+  opacity: 0;
+}
+
+.btn-emotion:focus svg:first-child {
+  opacity: 0;
 }
 
 .btn-emotion:hover svg:last-child {
-  display: block;
-  transition: 1s 1s ease-in-out;
+  opacity: 1;
 }
 
-@keyframes feedback-expression {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+.btn-emotion:focus svg:last-child {
+  opacity: 1;
 }
-}
-  
 
 .btn-emotion:hover svg {
   fill: var(--c-accent-tetriary);
@@ -760,6 +774,7 @@ p {
 .btn-emotion {
   margin: 0 0.4em;
   border-radius: var(--border-radius-default);
+  position: relative;
 }
 
 .btn-emotion:hover {
@@ -788,6 +803,7 @@ p {
   border-radius: 0 0.5em 0.5em 0.5em;
   padding: 3em 2em;
   min-height: 12em;
+  position: relative;
 }
 
 .toptab {
@@ -835,6 +851,7 @@ p {
 .content svg {
   margin: 0 0 -0.1em 0;
   fill: var(--c-primary);
+  height: 1em;
 }
 
 #fontIncrease {
@@ -850,6 +867,11 @@ article {
 
 .hide {
   display: none;
+}
+
+/* Opacity zero is een klasse voor animaties */
+.opacity-zero {
+  opacity: 0;
 }
 
 .content-item {
