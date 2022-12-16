@@ -40,8 +40,13 @@
 }
 
 @font-face {
-  font-family: Fira Sans, calibri, sans-serif;
-  src: url(../assets/);
+  font-family: Fira Sans Medium, calibri, sans-serif;
+  src: url(../font/firasans-medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Fira Sans Regular, calibri, sans-serif;
+  src: url(../font/firasans-regular.ttf) format("truetype");
 }
 
 html {
@@ -151,6 +156,23 @@ footer .social-media-group {
 .reaction-text {
   display: block;
   margin: 0;
+  margin-top: 1em;
+  transition: 0.8s ease-in;
+  position: absolute;
+  /* transform: translateY(-4em); */
+  /* animation: fade-up 0.8s ease-in forwards; */
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(0em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-4em);
+    opacity: 1;
+  }
 }
 
 .social-media-group div {
@@ -719,18 +741,20 @@ p {
   font-family: Fira Sans, Calibri, sans-serif;
   max-width: 30em;
   line-height: 1.4;
-
 }
 
 .emotion-group {
   display: block;
   width: fit-content;
   margin: 1em;
+  position: relative;
+  transform: translateY(-2em);
 }
 
 .emotion-group-buttons {
   margin: 1em 0;
   justify-content: flex-start;
+  position: absolute;
 }
 
 .btn-emotion svg {
@@ -904,6 +928,10 @@ article {
 
 .text100 {
   font-size: 1em * 100%;
+}
+
+.text200 {
+  font-size: 200%;
 }
 
 .dark-theme {

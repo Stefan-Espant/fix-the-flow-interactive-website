@@ -42,8 +42,8 @@ emotionReaction.addEventListener('click', switchSections)
 
 // Functies voor afhandeling
 function switchSections(){
-    emotionReaction.classList.remove('hide')
-    emotionButtons.classList.add('hide')
+    emotionReaction.classList.remove('opacity-zero')
+    emotionButtons.classList.add('opacity-zero')
 }
 
 // Back to top button selecteren
