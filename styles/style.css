@@ -100,7 +100,7 @@ p {
   color: var(--c-light);
 }
 
-.footer-sticky {
+footer .sticky {
   position: absolute;
   bottom: 0;
 }
