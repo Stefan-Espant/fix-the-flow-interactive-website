@@ -31,14 +31,17 @@
   --padding-x-large: 1em;
   --padding-auto: auto;
 
-
-
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: Fira Sans, calibri, sans-serif;
+  src: url(../assets/);
 }
 
 html {
@@ -467,6 +470,7 @@ main p {
 
 .content-item h3 {
   color: var(--c-primary);
+  margin-top: 1em;
 }
 
 #desktop {
