@@ -21,8 +21,66 @@
         margin: auto 0.8em;
         color: var(--c-invert);
       }
+
+      /* Typografie */
+
+
     
       /* layout */
+      header #logo {
+        width: auto;
+        height: 5em;
+        border: 4px solid var(--c-default);
+        border-radius: 0 0 3em 0;
+        background-color: var(--c-default);
+        padding: 0.5em 1.2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      
+      header #logo::after {
+        width: 1em;
+        aspect-ratio: 1/1;
+        background-color: #f72e96;
+      }
+      
+      #logo svg {
+        left: 13.8em;
+        position: relative;
+        z-index: -9;
+        height: 6em;
+        fill: var(--c-accent-primary);
+      }
+      
+      #after-curve {
+        width: 100vw;
+        height: 2.5em;
+        background-color: var(--c-default);
+        float: inline-end;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+      
+      #after-curve::before {
+        content: '';
+        width: 3.5em;
+        height: 3.5em;
+        position: absolute;
+        top: 2.5em;
+        left: 13.8em;
+        box-shadow: 0.1em -1em 0 -0.2em var(--c-default);
+        border-radius: 60% 0 0 0;
+      }
+      
+      #curve {
+        width: 1em;
+        height: 2em;
+        display: block;
+        background-color: sierra;
+      }
     
       main {
         width: 66vw;
@@ -50,7 +108,7 @@
         display: inline-block;
         margin: 0;
         background-color: var(--c-primary);
-        position: fixed;
+        position: static;
         left: 0;
         bottom: 0;
       }
@@ -60,7 +118,7 @@
         display: block;
         width: 100vw;
         height: 3vh;
-        background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+        background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
         margin-top: -3vh;
       }
     
@@ -146,7 +204,7 @@
         height: 2.5em;
         background-color: var(--c-default);
         float: inline-end;
-        position: inherit;
+        position: absolute;
       }
     
       .wrapper {
@@ -208,7 +266,7 @@
     
       /* Typografie */
       h1 {
-        font-size: 2em;
+        font-size: 3em;
         max-width: 20em;
       }
     
@@ -217,7 +275,21 @@
       }
     
       h2 {
+        font-size: 2.25em;
+      }
+
+
+
+      h3, h4 {
         font-size: 1.5em;
+        max-width: 30em;
+        letter-spacing: -0.02em;
+      }
+      
+      p {
+        font-family: Fira Sans, Calibri, sans-serif;
+        font-size: 1.5em;
+        max-width: 35em;
       }
     
 

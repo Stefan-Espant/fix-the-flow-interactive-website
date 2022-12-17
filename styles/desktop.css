@@ -39,6 +39,12 @@
     margin: 6em auto;
   }
 
+  header {
+    width: 100vw;
+    height: 6vh;
+    display: block;
+  }
+
   footer {
     width: 100vw;
     min-height: 10vh;

@@ -40,13 +40,13 @@
 }
 
 @font-face {
-  font-family: Fira Sans Medium, calibri, sans-serif;
-  src: url(../font/firasans-medium.ttf) format("truetype");
+  font-family: Fira Sans Medium, Calibri, sans-serif;
+  src: local("Fira Sans"), url(../font/firasans-medium.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: Fira Sans Regular, calibri, sans-serif;
-  src: url(../font/firasans-regular.ttf) format("truetype");
+  font-family: Fira Sans Regular, Calibri, sans-serif;
+  src: local("Fira Sans"), url(../font/firasans-regular.ttf) format("truetype");
 }
 
 html {
@@ -66,7 +66,6 @@ header {
   width: 100vw;
   height: 6vh;
   display: block;
-  /*background-color: var(--c-accent-primary);*/
 }
 
 footer {
@@ -159,9 +158,10 @@ footer .social-media-group {
   margin-top: 1em;
   transition: 0.8s ease-in;
   position: absolute;
-  /* transform: translateY(-4em); */
-  /* animation: fade-up 0.8s ease-in forwards; */
+  cursor: default;
 }
+
+
 
 @keyframes fade-up {
   0% {
@@ -173,6 +173,10 @@ footer .social-media-group {
     transform: translateY(-4em);
     opacity: 1;
   }
+}
+
+.fade-left {
+  transform: translateX(-40em);
 }
 
 .social-media-group div {
@@ -755,6 +759,7 @@ p {
   margin: 1em 0;
   justify-content: flex-start;
   position: absolute;
+  z-index: 5;
 }
 
 .btn-emotion svg {
@@ -981,7 +986,8 @@ article {
   h4,
   h5,
   h6 {
-    font-family: Fira Sans, sans-serif;
+    font-family: Fira Sans Medium, calibri, sans-serif;
+    src: url(../font/firasans-medium.ttf) format("truetype");
     font-weight: initial;
     color: var(--c-invert);
   }
