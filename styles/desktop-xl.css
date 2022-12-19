@@ -196,6 +196,8 @@
         margin: 4em auto;
         flex-wrap: wrap;
         float: left;
+        position: sticky;
+        top: 2em;
       }
     
       #after-curve {
