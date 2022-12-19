@@ -751,6 +751,9 @@ p {
 
 blockquote {
   margin: 1em 0;
+  padding-left: 1em;
+  border-left: 1em solid var(--c-accent-primary);
+  color: var(--c-invert);
 }
 
 .emotion-group {
@@ -991,6 +994,22 @@ article {
 
   .ui-settings svg {
     fill: var(--c-light);
+  }
+
+  .checlist {
+    width: auto;
+    display: block;
+    margin: 0 0 1em 0;
+    position: relative;
+    background-color: var(--c-default);
+    border-radius:0.4em;
+    padding: 3em 2em;
+    min-height: 12em;
+    position: relative;
+  }
+
+  blockquote {
+    border-left: 1em solid var(--c-accent-secundary);
   }
 
   /* Typography */

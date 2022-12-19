@@ -60,6 +60,16 @@
     margin: 2em auto 3em;
   }
 
+  .checlist {
+    width: auto;
+    display: block;
+    margin: 0 0 1em 0;
+    position: relative;
+    background-color: var(--c-default);
+    border-radius:0.4em;
+    padding: 3em 2em;
+  }
+
   #desktop {
     display: none;
   }
@@ -130,9 +140,10 @@
     color: var(--c-white);
   }
   
-  #emotion-group {
+  .emotion-group {
     display: block;
     width: fit-content;
+    height: 12em;
     transform: translateY(0em);
   }
 
