@@ -52,9 +52,6 @@
     display: inline-block;
     margin: 0;
     background-color: var(--c-primary);
-    position: static;
-    left: 0;
-    bottom: 0;
   }
 
   .footer-sticky {
@@ -84,6 +81,7 @@
     margin: 1em;
     max-width: 45vw;
     display: block;
+    transform: translateY(-2em);
   }
 
   footer nav {
@@ -177,6 +175,8 @@
     margin: 4em auto;
     flex-wrap: wrap;
     float: left;
+    position: sticky;
+    top: 2em;
   }
 
   #after-curve {

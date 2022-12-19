@@ -73,9 +73,6 @@ footer {
   height: auto;
   display: inline-block;
   background-color: var(--c-primary);
-  position: static;
-  left: 0;
-  bottom: 0;
 }
 
 footer::before {
@@ -753,7 +750,6 @@ p {
   width: fit-content;
   margin: 1em;
   position: relative;
-  transform: translateY(-2em);
 }
 
 .emotion-group-buttons {
@@ -810,6 +806,7 @@ p {
   margin: 0 0.4em;
   border-radius: var(--border-radius-default);
   position: relative;
+  border: none;
 }
 
 .btn-emotion:hover {
@@ -944,6 +941,10 @@ article {
   color-scheme: dark;
 }
 
+.dark-contrast .btn-emotion {
+  border: 0.2em solid var(--c-light);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --c-primary: #B9005F;
@@ -956,7 +957,7 @@ article {
     --c-alert: #E30059;
     --c-warning: #FFD05F;
     --c-succes: #25AE93;
-    --c-info: #606eb3;
+    --c-info: #9dadff;
   }
 
   .dark-contrast {
@@ -965,6 +966,11 @@ article {
     --c-succes: #096351;
     --c-info: #7183dc;
     --c-primary: #800041;
+  }
+
+  ::selection {
+    background-color: var(--c-info);
+    color: var(--c-default);
   }
 
   /* Header */
@@ -1030,4 +1036,22 @@ article {
   fieldset {
     width: 33vw;
   }
+}
+
+@media (max-height: 800px) {
+  
+  footer {
+    position: static;
+  }
+
+}
+
+@media (min-height: 800px) {
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    left:0;
+  }
+
 }

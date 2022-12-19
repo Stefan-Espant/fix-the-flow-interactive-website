@@ -71,7 +71,6 @@
     display: inline-block;
     margin: 0;
     background-color: var(--c-primary);
-    position: static;
     z-index: 2;
 
   }
@@ -134,6 +133,7 @@
   #emotion-group {
     display: block;
     width: fit-content;
+    transform: translateY(0em);
   }
 
   .subject {

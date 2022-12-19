@@ -108,7 +108,6 @@
         display: inline-block;
         margin: 0;
         background-color: var(--c-primary);
-        position: static;
         left: 0;
         bottom: 0;
       }

@@ -50,9 +50,6 @@
     margin: auto;
     float: none;
     background-color: var(--c-primary);
-    position: static;
-    left: 0;
-    bottom: 0;
   }
 
   footer::before {
@@ -70,10 +67,12 @@
     justify-content: center;
   }
 
-  footer .emotion-group {
+  .emotion-group {
     margin: 1em;
     max-width: 45vw;
     display: block;
+    transform: translateY(0em);
+    height: 10em;
   }
 
   footer nav {
