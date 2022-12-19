@@ -108,7 +108,7 @@ p {
   color: var(--c-light);
 }
 
-footer .sticky {
+.sticky {
   position: absolute;
   bottom: 0;
 }
@@ -749,6 +749,10 @@ p {
   line-height: 1.4;
 }
 
+blockquote {
+  margin: 1em 0;
+}
+
 .emotion-group {
   display: block;
   width: fit-content;
@@ -1046,6 +1050,11 @@ article {
   
   footer {
     position: static;
+  }
+
+  .sticky {
+    position: absolute;
+    bottom: 0;
   }
 
 }
