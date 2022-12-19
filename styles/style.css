@@ -43,13 +43,14 @@
 @import url(../font/firasans-regular.ttf);
 
 @font-face {
-  font-family: "Fira Sans Medium", Calibri, sans-serif;
-  src: local("Fira Sans"), url(../font/firasans-medium.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Fira Sans Regular", Calibri, sans-serif;
-  src: local("Fira Sans"), url(../font/firasans-regular.ttf) format("truetype");
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: inherit;
+  src:  local("Fira Sans Medium") 
+        url(../font/firasans-medium.ttf) format("truetype"),
+        local("Fira Sans regular")
+        url(../font/firasans-regular.ttf) format("truetype");
+        ;
 }
 
 html {
@@ -60,7 +61,7 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: Fira sans, sans-serif;
+  font-family: "Fira sans", "Calibri", sans-serif;
   background-color: var(--c-accent-primary);
   font-size: 100%;
 }
