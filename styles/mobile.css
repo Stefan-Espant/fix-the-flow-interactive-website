@@ -2,7 +2,7 @@
   .categorie {
     display: block;
     width: auto;
-    margin: 0.5em 0.1em;
+    margin: 0.4em 0.1em;
   }
 
   .categorie svg {
@@ -258,7 +258,7 @@
   .categorie {
     display: flex;
     width: 12em;
-    margin: 0.8em;
+    margin: 0.4em;
   }
 
   .categorie svg {
@@ -398,7 +398,7 @@
 
   .options {
     width: 90vw;
-    margin: 0;
+    margin: 1em;
   }
 
   .option-group {

@@ -467,6 +467,7 @@ main a {
 
 main p {
   color: var(--c-invert);
+  margin: 1em;
 }
 
 
@@ -765,7 +766,6 @@ li {
 }
 
 /* Colors */
-
 .bg-red {
   background-color: var(--c-alert);
 }
@@ -786,13 +786,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Sans Medium", sans-serif;
+  font-family: "Fira Sans Medium", "Calibri", sans-serif;
   font-weight: initial;
   color: var(--c-primary);
 }
 
 h1 {
-  font-family: "Fira Sans Medium";
   font-size: 2em;
   max-width: 20em;
   letter-spacing: -0.02em;
