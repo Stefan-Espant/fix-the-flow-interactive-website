@@ -39,23 +39,23 @@
   padding: 0;
 }
 
-@import url(../font/firasans-medium.ttf);
-@import url(../font/firasans-regular.ttf);
+@import url(../assets/font/firasans-medium.ttf);
+@import url(../assets/font/firasans-regular.ttf);
 
 @font-face {
-  font-family: "FiraSansMedium";
+  font-family: "Fira Sans Medium";
   font-style: normal;
   font-weight: 400;
-  src:  local("FiraSansMedium") 
-        url(font/firasans-medium.ttf) format("truetype");
+  src:  local("Fira Sans Medium") 
+        url(../assets/font/firasans-medium.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "FiraSansRegular";
+  font-family: "Fira Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("FiraSansRegular")
-  url(font/firasans-regular.ttf) format("truetype");
+  src: local("Fira Sans Regular")
+  url(../assets/font/firasans-regular.ttf) format("truetype");
 }
 
 html {
@@ -68,7 +68,7 @@ body {
   min-height: 100vh;
   background-color: var(--c-accent-primary);
   font-size: 100%;
-  font-family: 'FiraSansRegular';
+  font-family: 'Fira Sans Regular';
 }
 
 header {
@@ -237,7 +237,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 0.4em;
-  font-family: 'FiraSansRegular';
+  font-family: 'Fira Sans Regular';
 }
 
 button:hover {
@@ -792,7 +792,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "FiraSansMedium", "Calibri", sans-serif;
+  font-family: "Fira Sans Medium", "Calibri", sans-serif;
   font-weight: initial;
   color: var(--c-primary);
 }
@@ -831,7 +831,7 @@ h4 {
 }
 
 p {
-  font-family: 'FiraSansRegular', Calibri, sans-serif;
+  font-family: 'Fira Sans Regular', Calibri, sans-serif;
   max-width: 30em;
   line-height: 1.4;
 }
@@ -844,7 +844,7 @@ blockquote {
 }
 
 label {
-  font-family:'FiraSansRegular';
+  font-family:'Fira Sans Regular';
   color: var(--c-primary);
 }
 
@@ -1095,7 +1095,7 @@ article {
   h4,
   h5,
   h6 {
-    font-family: "FiraSansMedium", calibri, sans-serif;
+    font-family: "Fira Sans Medium", calibri, sans-serif;
     font-weight: initial;
     color: var(--c-invert);
   }
