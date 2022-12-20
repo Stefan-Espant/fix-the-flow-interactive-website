@@ -43,18 +43,18 @@
 @import url(../font/firasans-regular.ttf);
 
 @font-face {
-  font-family: "Fira Sans Medium";
+  font-family: "fira sans medium";
   font-style: normal;
   font-weight: inherit;
-  src:  local("Fira Sans Medium") 
+  src:  local("fira sans medium") 
         url(../font/firasans-medium.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Fira Sans Regular";
+  font-family: "fira Sans regular";
   font-style: normal;
   font-weight: inherit;
-  src: local("Fira Sans Regular")
+  src: local("fira Sans regular")
   url(../font/firasans-regular.ttf) format("truetype");
 }
 
@@ -791,7 +791,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Sans Medium", "Calibri", sans-serif;
+  font-family: "fira sans medium", "Calibri", sans-serif;
   font-weight: initial;
   color: var(--c-primary);
 }
@@ -830,7 +830,7 @@ h4 {
 }
 
 p {
-  font-family: "Fira Sans Regular", Calibri, sans-serif;
+  font-family: "fira Sans regular", Calibri, sans-serif;
   max-width: 30em;
   line-height: 1.4;
 }
@@ -843,7 +843,7 @@ blockquote {
 }
 
 label {
-  font-family: "Fira Sans Medium";
+  font-family: "fira sans medium";
   color: var(--c-primary);
 }
 
@@ -1094,7 +1094,7 @@ article {
   h4,
   h5,
   h6 {
-    font-family: "Fira Sans Medium", calibri, sans-serif;
+    font-family: "fira sans medium", calibri, sans-serif;
     font-weight: initial;
     color: var(--c-invert);
   }
