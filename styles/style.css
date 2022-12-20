@@ -48,7 +48,7 @@
   font-weight: inherit;
   src:  local("Fira Sans Medium") 
         url(../font/firasans-medium.ttf) format("truetype"),
-        local("Fira Sans regular")
+        local("Fira Sans Regular")
         url(../font/firasans-regular.ttf) format("truetype");
         ;
 }
@@ -61,7 +61,6 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: "Fira sans", "Calibri", sans-serif;
   background-color: var(--c-accent-primary);
   font-size: 100%;
 }
@@ -578,16 +577,10 @@ input[type="checkbox"]::checked {
   margin: 0em 0.8em 0em -0.8em;
 }
 
-input[type="checkbox"]::after {
-
-}
-
 input[type="checkbox"]:focus-within {  
   outline: 0.2em solid var(--c-info);
   border-radius: 1em;
 }
-
-
 
 #desktop {
   display: none;
@@ -920,7 +913,6 @@ label {
 }
 
 /* Folder section */
-
 .subject {
   display: block;
 }
@@ -1099,7 +1091,6 @@ article {
   h5,
   h6 {
     font-family: "Fira Sans Medium", calibri, sans-serif;
-    src: url(../font/firasans-medium.ttf) format("truetype");
     font-weight: initial;
     color: var(--c-invert);
   }
