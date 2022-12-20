@@ -68,3 +68,15 @@ function Scrollback_topfunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+
+  //Checklist 
+const collapseButton = document.querySelector('.collapse-button')
+const collapseForm = document.querySelector('.checklist-overview')
+
+collapseButton.addEventListener('click', openChecklistSection)
+
+function openChecklistSection(){
+    collapseForm.classList.toggle('checklist-collapse')
+    collapseButton.classList.toggle('rotate180')
+}

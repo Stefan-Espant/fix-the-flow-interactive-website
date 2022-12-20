@@ -1,7 +1,7 @@
 @media (min-width: 1024px) and (max-width: 1919px) {
   .categorie {
     display: flex;
-    width: 75%;
+    width: 80%;
     margin: 0.4em 0.1em;
   }
 
@@ -33,6 +33,48 @@
   main a {
     padding: 0.8em;
     display: inline-block;
+  }
+
+  /* Checklist */
+  .collapse {
+    margin: 1em 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius-default);
+    background-color: var(--c-accent-primary);
+    width: auto;
+    height: fit-content;
+    z-index: 3;
+  }
+
+  .collapse-button {
+    transform: translateZ(180deg);
+  }
+
+  .checklist {
+    width: auto;
+    display: block;
+    margin: 0 0 1em 0;
+    background-color: var(--c-default);
+    border-radius:0.4em;
+    padding: 1em 2em;
+    position: relative;
+  }
+
+  .collapse-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .collapse-list a {
+    margin: auto 0;
+  }
+
+  .checklist h2 {
+    max-width: 12em;
   }
 
   .index {

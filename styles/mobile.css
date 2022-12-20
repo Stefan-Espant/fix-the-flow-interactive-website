@@ -60,15 +60,20 @@
     margin: 2em auto 3em;
   }
 
-  .checlist {
+  .checklist {
     width: auto;
     display: block;
-    margin: 0 0 1em 0;
+    margin: 2em 0 4em;
     position: relative;
     background-color: var(--c-default);
     border-radius:0.4em;
-    padding: 3em 2em;
+    padding: 1em 1.6em;
   }
+
+  .checklist h2{
+    max-width: 12em;
+  }
+
 
   #desktop {
     display: none;
@@ -274,6 +279,26 @@
   main {
     display: block;
     margin: 4em auto;
+  }
+
+  .checklist {
+    width: auto;
+    display: block;
+    margin: 2em 0 4em;
+    position: relative;
+    background-color: var(--c-default);
+    border-radius:0.4em;
+    padding: 1em;
+  }
+
+  .checklist h2{
+    max-width: 12em;
+  }
+
+  .collapse-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   footer {

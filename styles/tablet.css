@@ -39,6 +39,27 @@
     margin: 0;
   }
 
+
+  .checklist {
+    width: auto;
+    display: block;
+    margin: 0 0 1em 0;
+    background-color: var(--c-default);
+    border-radius:0.4em;
+    padding: 1em 2em;
+    position: relative;
+  }
+
+  .checklist-content {
+    display: block;
+  }
+
+  .collapse-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   #desktop {
     display: none;
   }
@@ -227,5 +248,21 @@
     justify-content: space-around;
     margin: 5em auto;
     flex-wrap: wrap;
+  }
+
+  .checklist {
+    width: auto;
+    display: block;
+    margin: 0 0 1em 0;
+    background-color: var(--c-default);
+    border-radius:0.4em;
+    padding: 1em 2em;
+    position: relative;
+  }
+
+  .collapse-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

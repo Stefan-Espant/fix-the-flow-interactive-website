@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Toolgankelijk - Waarneembaar</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/tablet.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
+    <link rel="stylesheet" href="styles/desktop-xl.css" />
+    <link rel="icon" type="image/png" href="./assets/va-favicon.png" />
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+    </header>
+    <div id="after-curve"></div>
+    </header>
+
+    <!-- Hieronder bevinden zich de 4 hoofdcategorieën -->
+    <aside class="cntt">
+        <a href="./waarneembaar.html" class="categorie">
+            <svg viewBox="0 0 388 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z" />
+            </svg>
+            <p>Waarneembaar</p>
+        </a>
+        <a href="./begrijpelijk.html" class="categorie">
+            <svg viewBox="0 0 388 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z" />
+            </svg>
+            <p>Begrijpelijk</p>
+        </a>
+        <a href="./bedienbaar.html" class="categorie">
+            <svg viewBox="0 0 388 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z" />
+            </svg>
+            <p>Bedienbaar</p>
+        </a>
+        <a href="./robuust.html" class="categorie">
+            <svg viewBox="0 0 388 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z" />
+            </svg>
+            <p>Robuust</p>
+        </a>
+    </aside>
+
+    <!-- Dit is de sectie waar de content staat -->
+
+    <main class="subject">
+        <div class="toptab">
+            <div class="tab"></div>
+            <div class="curve"></div>
+            <div class="curve-bg"></div>
+            <!-- Dit zijn de twee knoppen om de toegankelijkheid van de content te verbeteren -->
+            <ul class="ui-settings">
+                <li>
+                    <a href="index.html" aria-label="Ga terug naar de homepagina">
+                        <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M33.1638 15.2685C33.8233 15.8892 33.384 16.9967 32.4784 16.9967H31.016C30.4616 16.9967 30.013 17.4477 30.016 18.0021L30.0856 31.0502C30.0885 31.6046 29.64 32.0555 29.0856 32.0555H22C21.4477 32.0555 21 31.6078 21 31.0555V22.389C21 21.8367 20.5523 21.389 20 21.389H14C13.4477 21.389 13 21.8367 13 22.389V31.0555C13 31.6078 12.5523 32.0555 12 32.0555H4.90911C4.35683 32.0555 3.90911 31.6078 3.90911 31.0555V17.9967C3.90911 17.4444 3.4614 16.9967 2.90911 16.9967H1.5216C0.616019 16.9967 0.176793 15.8892 0.836242 15.2685L16.3147 0.700632C16.6997 0.338233 17.3003 0.338233 17.6854 0.700632L33.1638 15.2685Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <button class="fontSize" aria-label="Vergroot tekst" onclick="fontSize()">
+                        <svg width="44" height="36" viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.1123 20L12.1043 15.828H6.44827L5.46827 20H0.708266L6.56027 0.595999H12.1323L17.9843 20H13.1123ZM7.23227 12.496H11.3203L9.27627 3.928L7.23227 12.496ZM31.1399 15.688C31.1399 16.248 31.2146 16.6587 31.3639 16.92C31.5319 17.1813 31.7932 17.3773 32.1479 17.508L31.2239 20.392C30.3092 20.3173 29.5626 20.1213 28.9839 19.804C28.4052 19.468 27.9572 18.9453 27.6399 18.236C26.6692 19.7293 25.1759 20.476 23.1599 20.476C21.6852 20.476 20.5092 20.0467 19.6319 19.188C18.7546 18.3293 18.3159 17.2093 18.3159 15.828C18.3159 14.204 18.9132 12.9627 20.1079 12.104C21.3026 11.2453 23.0292 10.816 25.2879 10.816H26.7999V10.172C26.7999 9.29467 26.6132 8.69733 26.2399 8.38C25.8666 8.044 25.2132 7.876 24.2799 7.876C23.7946 7.876 23.2066 7.95067 22.5159 8.1C21.8252 8.23067 21.1159 8.41733 20.3879 8.66L19.3799 5.748C20.3132 5.39333 21.2652 5.12267 22.2359 4.936C23.2252 4.74933 24.1399 4.656 24.9799 4.656C27.1079 4.656 28.6666 5.09467 29.6559 5.972C30.6452 6.84933 31.1399 8.16533 31.1399 9.92V15.688ZM24.4479 17.312C25.4559 17.312 26.2399 16.836 26.7999 15.884V13.252H25.7079C24.6999 13.252 23.9439 13.4293 23.4399 13.784C22.9546 14.1387 22.7119 14.6893 22.7119 15.436C22.7119 16.0333 22.8612 16.5 23.1599 16.836C23.4772 17.1533 23.9066 17.312 24.4479 17.312Z"
+                                fill="" />
+                        </svg>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="contrast-trigger" id="changeContrast">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36ZM19.9943 32.0033C26.8608 31.0343 32.1429 25.134 32.1429 18C32.1429 10.866 26.8608 4.96574 19.9943 3.99665C18.9005 3.84229 18 4.75091 18 5.85548L18 18L18 30.1445C18 31.2491 18.9005 32.1577 19.9943 32.0033Z"
+                                fill="" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <section class="folder" id="fontIncrease">
+            <div class="content">
+                <h1>Checklist WCAG-richtlijnen</h1>
+                <article class="checklist-content">
+                    <div class="collapse">
+                        <h2>Waarneembaar</h2>
+                        <!-- <progress id="waarneembaar" value="0" max="7"></progress> -->
+                        <a class="collapse-button rotate180">
+                            <svg width="28" height="26" viewBox="0 0 28 26" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.66667 -2.21471e-06L23.3333 -5.82818e-07C26.353 -3.1883e-07 28.2838 3.21793 26.8627 5.88235L17.5294 23.3824C16.0235 26.2059 11.9765 26.2059 10.4706 23.3824L1.13726 5.88235C-0.283769 3.21793 1.64699 -2.4787e-06 4.66667 -2.21471e-06Z"
+                                    fill="" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <form class="checklist-overview" id="collapseWaarneembaar">
+                        <label>
+                            <input type="checkbox">
+                            1.1 Gesproken tekst</label>
+                        <p>Filmpjes hebben een ondertiteling met de
+                            gesproken tekst en andere geluiden</p>
+                        <label>
+                            <input type="checkbox">
+                            1.2 Visuele Audiobeschrijving</label>
+                        <p>Filmpjes en bewegend beeld hebben (indien
+                            nodig) een audiobeschrijving.</p>
+                        <label>
+                            <input type="checkbox">
+                            1.3 Visuele aanwijzingen</label>
+                        <p>Fouten en knoppen bestaan niet alléén uit visuele aanwijzingen (bijv. rode kleur).</p>
+                        <label>
+                            <input type="checkbox">
+                            1.4 Ingevulde velden</label>
+                        <p>Fouten of niet ingevulde velden zijn
+                            duidelijk aangegeven en er is, als dat kan,
+                            een suggestie voor verbetering.</p>
+                        <label>
+                            <input type="checkbox">
+                            1.5 Voorgelezen inhoud</label>
+                        <p>De website bevat gesproken tekst.</p>
+                        <label>
+                            <input type="checkbox">
+                            1.6 Uitvergroot tot 200%</label>
+                        <p>De website bevat gesproken tekst.</p>
+                        <label>
+                            <input type="checkbox">
+                            1.7 Aangepaste tekstgrootte</label>
+                        <p>Gebruikers kunnen de tekstgrootte aanpassen.</p>
+                    </form>
+                </article>
+                <article class="checklist-content">
+                    <div class="collapse">
+                        <h2>Begrijpelijk</h2>
+                        <a class="collapse-button rotate180">
+                            <svg width="28" height="26" viewBox="0 0 28 26" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.66667 -2.21471e-06L23.3333 -5.82818e-07C26.353 -3.1883e-07 28.2838 3.21793 26.8627 5.88235L17.5294 23.3824C16.0235 26.2059 11.9765 26.2059 10.4706 23.3824L1.13726 5.88235C-0.283769 3.21793 1.64699 -2.4787e-06 4.66667 -2.21471e-06Z"
+                                    fill="" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <form class="checklist-overview">
+                        <label>
+                            <input type="checkbox">
+                            2.1 Taalniveau B1</label>
+                        <p>Is de tekst in taalniveau B1 geschreven?</p>
+                        <label>
+                            <input type="checkbox">
+                            2.2 Duidelijke titel</label>
+                        <p>Heeft de pagina een duidelijke titel die
+                            de inhoud van de pagina beschrijft?</p>
+                        <label>
+                            <input type="checkbox">
+                            2.3 Beschrijvende koppen</label>
+                        <p>Heeft de tekst duidelijk en beschrijvende
+                            koppen en tussenkoppen?</p>
+                        <label>
+                            <input type="checkbox">
+                            2.4 Beschrijvende afbeeldingen</label>
+                        <p>Voor ingewikkeldere afbeeldingen die
+                            informatie bevatten, zoals grafieken of
+                            infographics, is een langere beschrijving
+                            gemaakt (naast de alt-tekst).</p>
+                        <label>
+                            <input type="checkbox">
+                            2.5 Tekst als afbeelding</label>
+                        <p>Tekst is niet als afbeelding geplaatst
+                            maar als echte tekst.</p>
+                        <label>
+                            <input type="checkbox">
+                            2.6 Tabellen met omschrijving</label>
+                        <p>Tabellen hebben een bijschrift of
+                            samenvatting.</p>
+                        <label>
+                            <input type="checkbox">
+                            2.7 Voorstelbare formulieren</label>
+                        <p>De werking van het formulier is
+                            voorspelbaar (bijv. verzenden pas na zelf
+                            klikken of informatie daarover).</p>
+                    </form>
+                </article>
+                <article class="checklist-content">
+                    <div class="collapse">
+                        <h2>Bedienbaar</h2>
+                        <a class="collapse-button rotate180">
+                            <svg width="28" height="26" viewBox="0 0 28 26" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.66667 -2.21471e-06L23.3333 -5.82818e-07C26.353 -3.1883e-07 28.2838 3.21793 26.8627 5.88235L17.5294 23.3824C16.0235 26.2059 11.9765 26.2059 10.4706 23.3824L1.13726 5.88235C-0.283769 3.21793 1.64699 -2.4787e-06 4.66667 -2.21471e-06Z"
+                                    fill="" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <form class="checklist-overview">
+                        <label>
+                            <input type="checkbox">
+                            3.1 Toegankelijke CAPTCHA's</label>
+                        <p>Is de tekst in taalniveau B1 geschreven?</p>
+                        <label>
+                            <input type="checkbox">
+                            3.2 Bewegend beeld (3 sec.)</label>
+                        <p>Heeft de pagina een duidelijke titel die
+                            de inhoud van de pagina beschrijft?</p>
+                        <label>
+                            <input type="checkbox">
+                            3.3 Invullen gegevens</label>
+                        <p>Heeft de tekst duidelijk en beschrijvende
+                            koppen en tussenkoppen?</p>
+                        <label>
+                            <input type="checkbox">
+                            3.4 Controle over fouten</label>
+                        <p>Voor ingewikkeldere afbeeldingen die
+                            informatie bevatten, zoals grafieken of
+                            infographics, is een langere beschrijving
+                            gemaakt (naast de alt-tekst).</p>
+                        <label>
+                            <input type="checkbox">
+                            3.5 Toetsenbord formulieren</label>
+                        <p>Tekst is niet als afbeelding geplaatst
+                            maar als echte tekst.</p>
+                        <label>
+                            <input type="checkbox">
+                            3.6 Instructies invoervelden</label>
+                        <p>Tabellen hebben een bijschrift of
+                            samenvatting.</p>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+    <a class="back-2-top opacity-zero" href="#logo">
+        <svg width="20" height="20" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Terug naar het begin</title>
+            <path
+                d="M23.3333 26H4.66667C1.64698 26 -0.283772 22.7821 1.13725 20.1176L10.4706 2.61765C11.9765 -0.205882 16.0235 -0.205883 17.5294 2.61765L26.8627 20.1176C28.2838 22.7821 26.353 26 23.3333 26Z"
+                fill="" />
+        </svg>
+    </a>
+    <footer>
+        <div>
+            <section class="emotion-group" aria-label="">
+                <h2 aria-label="Heeft deze pagina geholpen?">
+                    Heeft deze pagina geholpen?
+                </h2>
+                <p aria-label="Maak een keuze uit de onderstaande knoppen.">
+                    Maak een keuze uit de onderstaande knoppen
+                </p>
+                <div class="emotion-group-buttons">
+                    <button class="btn-emotion bg-green" aria-label="blije smiley." onclick="switchSections()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
+                                fill="" />
+                            <path
+                                d="M17 8.5C17 9.32843 16.3284 10 15.5 10C14.6716 10 14 9.32843 14 8.5C14 7.67157 14.6716 7 15.5 7C16.3284 7 17 7.67157 17 8.5Z"
+                                fill="" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                fill="" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.66366 13.0583C6.18377 12.8725 6.75599 13.1436 6.94174 13.6637C7.63793 15.613 9.79239 17 12 17C14.2076 17 16.3621 15.613 17.0583 13.6637C17.244 13.1436 17.8162 12.8725 18.3363 13.0583C18.8564 13.244 19.1275 13.8163 18.9417 14.3364C17.9236 17.187 14.9352 19 12 19C9.06474 19 6.07635 17.187 5.05826 14.3364C4.8725 13.8163 5.14355 13.244 5.66366 13.0583Z"
+                                fill="" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.5927 13.4966C18.1117 16.7058 15.3432 19.1667 12 19.1667C8.65677 19.1667 5.88832 16.7058 5.40731 13.4966C5.32545 12.9504 5.78003 12.5 6.33231 12.5H12H17.6677C18.22 12.5 18.6746 12.9504 18.5927 13.4966ZM20 12.5C20 16.9183 16.4183 20.5 12 20.5C7.58172 20.5 4 16.9183 4 12.5C4 11.6716 4.67055 11 5.49899 11H12L18.5004 11C19.3288 11 20 11.6716 20 12.5ZM17.3406 8.95739C17.5109 9.40242 18.0051 9.59384 18.4221 9.45483C18.8521 9.31149 19.1247 8.83981 18.9472 8.37579C18.494 7.19163 17.2096 6.5 16.0011 6.5C14.7926 6.5 13.5082 7.19163 13.055 8.37579C12.8775 8.83981 13.1501 9.31149 13.5801 9.45483C13.9971 9.59384 14.4913 9.40242 14.6616 8.95739C14.8212 8.54038 15.3745 8.16664 16.0011 8.16664C16.6277 8.16664 17.181 8.54038 17.3406 8.95739ZM10.4221 9.45483C10.0051 9.59384 9.51086 9.40242 9.34057 8.95739C9.181 8.54038 8.62774 8.16664 8.0011 8.16664C7.37446 8.16664 6.8212 8.54038 6.66163 8.95739C6.49133 9.40242 5.99711 9.59384 5.5801 9.45483C5.15006 9.31149 4.87746 8.83981 5.05502 8.37579C5.50815 7.19163 6.79264 6.5 8.0011 6.5C9.20956 6.5 10.494 7.19163 10.9472 8.37579C11.1247 8.83981 10.8521 9.31149 10.4221 9.45483Z"
+                                fill="" />
+                        </svg>
+                    </button>
+                    <button class="btn-emotion bg-yellow" aria-label="neutrale smiley." onclick="switchSections()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
+                                fill="" />
+                            <path
+                                d="M17 8.5C17 9.32843 16.3284 10 15.5 10C14.6716 10 14 9.32843 14 8.5C14 7.67157 14.6716 7 15.5 7C16.3284 7 17 7.67157 17 8.5Z"
+                                fill="" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                fill="" />
+                            <path
+                                d="M6 15C6 14.4477 6.44772 14 7 14H17C17.5523 14 18 14.4477 18 15V15C18 15.5523 17.5523 16 17 16H7C6.44772 16 6 15.5523 6 15V15Z"
+                                fill="" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM8.5 10C9.32843 10 10 9.32843 10 8.5C10 7.67157 9.32843 7 8.5 7C7.67157 7 7 7.67157 7 8.5C7 9.32843 7.67157 10 8.5 10ZM15.5 10C16.3284 10 17 9.32843 17 8.5C17 7.67157 16.3284 7 15.5 7C14.6716 7 14 7.67157 14 8.5C14 9.32843 14.6716 10 15.5 10ZM6.93969 15.7622C6.42071 15.9511 6.15313 16.525 6.34202 17.0439C6.53091 17.5629 7.10475 17.8305 7.62373 17.6416L17.0207 14.2214C17.5396 14.0325 17.8072 13.4587 17.6183 12.9397C17.4294 12.4207 16.8556 12.1531 16.3366 12.342L6.93969 15.7622Z"
+                                fill="" />
+                        </svg>
+                    </button>
+                    <button class="btn-emotion bg-red" aria-label="ongelukkige smiley." onclick="switchSections()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
+                                fill="" />
+                            <path
+                                d="M17 8.5C17 9.32843 16.3284 10 15.5 10C14.6716 10 14 9.32843 14 8.5C14 7.67157 14.6716 7 15.5 7C16.3284 7 17 7.67157 17 8.5Z"
+                                fill="" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                fill="" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.3363 17.9417C17.8162 18.1275 17.244 17.8564 17.0583 17.3363C16.3621 15.387 14.2076 14 12 14C9.7924 14 7.63794 15.387 6.94174 17.3363C6.75599 17.8564 6.18377 18.1275 5.66367 17.9417C5.14356 17.756 4.87251 17.1837 5.05826 16.6636C6.07635 13.813 9.06475 12 12 12C14.9353 12 17.9237 13.813 18.9417 16.6636C19.1275 17.1837 18.8564 17.756 18.3363 17.9417Z"
+                                fill="" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM8.5 11C9.32843 11 10 10.3284 10 9.5C10 9.4038 9.99094 9.30971 9.97364 9.21854C10.3519 9.3328 10.7579 9.13275 10.8947 8.75689C11.0363 8.36766 10.8357 7.93728 10.4464 7.79561L6.2178 6.25652C5.82857 6.11485 5.39819 6.31554 5.25652 6.70477C5.11485 7.094 5.31554 7.52438 5.70477 7.66605L7.55124 8.33811C7.21478 8.61318 7 9.03151 7 9.5C7 10.3284 7.67157 11 8.5 11ZM15.5 11C16.3284 11 17 10.3284 17 9.5C17 9.05289 16.8044 8.65147 16.4941 8.37666L18.4464 7.66606C18.8356 7.52439 19.0363 7.09401 18.8947 6.70477C18.753 6.31554 18.3226 6.11485 17.9334 6.25652L13.7048 7.79561C13.3155 7.93728 13.1148 8.36766 13.2565 8.75689C13.3745 9.08118 13.693 9.27459 14.021 9.24818C14.0072 9.33006 14 9.41419 14 9.5C14 10.3284 14.6716 11 15.5 11ZM17.0583 17.3363C17.244 17.8564 17.8162 18.1275 18.3363 17.9417C18.8564 17.756 19.1275 17.1837 18.9417 16.6636C17.9237 13.813 14.9353 12 12 12C9.06475 12 6.07635 13.813 5.05826 16.6636C4.87251 17.1837 5.14356 17.756 5.66367 17.9417C6.18377 18.1275 6.75599 17.8564 6.94174 17.3363C7.63794 15.387 9.7924 14 12 14C14.2076 14 16.3621 15.387 17.0583 17.3363Z"
+                                fill="" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="reaction-text opacity-zero">
+                    <p>Bedankt voor uw feedback</p>
+                </div>
+            </section>
+            <nav>
+                <div class="footer-links">
+                    <a href="mailto:info@vervoeregio.nl?subject=Feedback%20over%20Toolgankelijk"
+                        aria-label="Stuur een e-mail naar Vervoeregio Amsterdam.">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.197287 1.13278L8.71963 8.23473C9.46133 8.85281 10.5387 8.85281 11.2804 8.23473L19.8027 1.13278C19.9291 1.39512 20 1.68929 20 2V12C20 13.1046 19.1046 14 18 14H2C0.895431 14 0 13.1046 0 12V2C0 1.68929 0.0708545 1.39512 0.197287 1.13278ZM0.842528 0.368774L9.35982 7.46651C9.73066 7.77555 10.2693 7.77555 10.6402 7.46651L19.1575 0.368774C18.8308 0.136548 18.4313 0 18 0H2C1.56866 0 1.16921 0.136547 0.842528 0.368774Z"
+                                fill="" />
+                        </svg>
+                        Contact ons</a>
+                    <a href="ontwikkelaar.html" aria-label="Lees meer info over de ontwikkelaar van Toolgankeljk.">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 0C0.895431 0 0 0.89543 0 2V12C0 13.1046 0.895431 14 2 14H18C19.1046 14 20 13.1046 20 12V2C20 0.895431 19.1046 0 18 0H2ZM12.5625 8C12.2518 8 12 8.22386 12 8.5C12 8.77614 12.2518 9 12.5625 9H17.4375C17.7482 9 18 8.77614 18 8.5C18 8.22386 17.7482 8 17.4375 8H12.5625ZM12 6.5C12 6.22386 12.2518 6 12.5625 6H17.4375C17.7482 6 18 6.22386 18 6.5C18 6.77614 17.7482 7 17.4375 7H12.5625C12.2518 7 12 6.77614 12 6.5ZM12.5625 4C12.2518 4 12 4.22386 12 4.5C12 4.77614 12.2518 5 12.5625 5H17.4375C17.7482 5 18 4.77614 18 4.5C18 4.22386 17.7482 4 17.4375 4H12.5625ZM8 4C8 5.10457 7.10457 6 6 6C4.89543 6 4 5.10457 4 4C4 2.89543 4.89543 2 6 2C7.10457 2 8 2.89543 8 4ZM5.2 7C3.43269 7 2 8.43269 2 10.2C2 10.6418 2.35817 11 2.8 11H9.2C9.64183 11 10 10.6418 10 10.2C10 8.43269 8.56731 7 6.8 7H5.2Z"
+                                fill="" />
+                        </svg>
+                        Over de ontwikkelaar</a>
+                    <a href="https://styleguide-vervoerregioamsterdam.student.fdnd.nl/"
+                        aria-label="Ga naar de website van de dynamische stijlgids.">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_346_174)">
+                                <path
+                                    d="M14.6667 10.6667H11.4L6.59999 15.48C6.39999 15.68 6.18666 15.8534 5.97333 16H14.6667C15.4 16 16 15.4 16 14.6667V12C16 11.2667 15.4 10.6667 14.6667 10.6667Z"
+                                    fill="" />
+                                <path
+                                    d="M10.84 9.33335L14.1333 6.04002C14.6533 5.52002 14.6533 4.68001 14.1333 4.16001L12.2533 2.28001C11.7333 1.76001 10.8933 1.76001 10.3733 2.28001L6.66665 5.98668V13.3333C6.66665 13.3333 6.66665 13.4667 6.65332 13.5333L9.51999 10.6667L10.84 9.33335V9.33335Z"
+                                    fill="" />
+                                <path
+                                    d="M4 0H1.33333C0.6 0 0 0.6 0 1.33333V13.3333C0 14.8 1.18667 16 2.66667 16C3.41333 16 4.10667 15.68 4.58667 15.1733C5.05333 14.6933 5.33333 14.0533 5.33333 13.3333V1.33333C5.33333 0.6 4.73333 0 4 0ZM1.33333 1.33333H4V4H1.33333V1.33333ZM2.66667 14.6667C1.93333 14.6667 1.33333 14.0667 1.33333 13.3333C1.33333 12.6 1.93333 12 2.66667 12C3.4 12 4 12.6 4 13.3333C4 14.0667 3.4 14.6667 2.66667 14.6667ZM4 8H1.33333V5.33333H4V8Z"
+                                    fill="" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_346_174">
+                                    <rect width="16" height="16" fill="" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Dynamische stijlgids</a>
+                </div>
+                <div class="social-media-group">
+                    <h3>
+                        Deel deze tool op:
+                    </h3>
+                    <div>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/sharing/share-offsite/?url=stefan-espant.github.io/fix-the-flow-interactive-website/"
+                            data-url="">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.721008 14.5866H9.85378V43.9261H0.721008V14.5866ZM5.2874 0C8.2084 0 10.5748 2.36639 10.5748 5.28739C10.5748 8.2084 8.2084 10.5748 5.2874 10.5748C2.36639 10.5748 0 8.2084 0 5.28739C0 2.36639 2.35714 0 5.2874 0Z"
+                                    fill="" />
+                                <path
+                                    d="M15.5664 14.5866H24.3109V18.5983H24.4403C25.6605 16.2874 28.6277 13.8563 33.0647 13.8563C42.2991 13.8563 44 19.9294 44 27.8328V43.9261H34.8857V29.663C34.8857 26.2614 34.8302 21.8799 30.1529 21.8799C25.4756 21.8799 24.6807 25.5866 24.6807 29.4135V43.9261H15.5756V14.5866H15.5664Z"
+                                    fill="" />
+                            </svg>
+                        </a>
+                        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world"
+                            aria-label="Deel deze website op Twitter.">
+                            <svg width="45" height="36" viewBox="0 0 45 36" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_347_183)">
+                                    <path
+                                        d="M44.302 4.26264C42.6732 4.98859 40.9235 5.47257 39.0807 5.69594C40.9607 4.56977 42.394 2.79211 43.0734 0.670084C41.3144 1.71248 39.3692 2.46636 37.303 2.87587C35.6463 1.10752 33.2823 0.00927734 30.667 0.00927734C25.6505 0.00927734 21.5739 4.07649 21.5739 9.10235C21.5739 9.819 21.6577 10.5077 21.8066 11.1778C14.2678 10.7776 7.5667 7.16646 3.08066 1.66595C2.29886 3.00617 1.85212 4.56977 1.85212 6.23575C1.85212 9.39087 3.45295 12.1737 5.89142 13.8025C4.40227 13.7559 2.9969 13.3464 1.77766 12.667C1.77766 12.7042 1.77766 12.7414 1.77766 12.7787C1.77766 17.1809 4.91417 20.8573 9.06515 21.6949C8.30196 21.8997 7.50155 22.0113 6.67322 22.0113C6.08687 22.0113 5.51913 21.9555 4.9607 21.8438C6.11479 25.455 9.47466 28.0796 13.4488 28.1541C10.3402 30.5925 6.42192 32.0444 2.15925 32.0444C1.42399 32.0444 0.698034 31.9979 -0.00930786 31.9141C4.01138 34.4922 8.78594 36 13.9235 36C30.6391 36 39.788 22.151 39.788 10.1354C39.788 9.74454 39.788 9.35364 39.7601 8.96274C41.5377 7.67836 43.0734 6.07753 44.2927 4.26264H44.302Z"
+                                        fill="" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_347_183">
+                                        <rect width="44.302" height="36" fill="" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="./scripts/script.js" type="text/javascript"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v15.0"
+        nonce="TpOVwmNv"></script>
+</body>
+
+</html>
+</body>
+
+</html>
