@@ -51,6 +51,12 @@
   }
 
   .checklist-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;    
+  }
+
+  .checklist-overview-content {
     display: block;
   }
 

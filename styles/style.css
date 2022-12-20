@@ -45,7 +45,7 @@
 @font-face {
   font-family: "fira sans medium";
   font-style: normal;
-  font-weight: inherit;
+  font-weight: 400;
   src:  local("fira sans medium") 
         url(font/firasans-medium.ttf) format("truetype");
 }
@@ -53,7 +53,7 @@
 @font-face {
   font-family: "fira Sans regular";
   font-style: normal;
-  font-weight: inherit;
+  font-weight: normal;
   src: local("fira Sans regular")
   url(font/firasans-regular.ttf) format("truetype");
 }
@@ -68,7 +68,7 @@ body {
   min-height: 100vh;
   background-color: var(--c-accent-primary);
   font-size: 100%;
-  font-family: fira sans;
+  font-family: "fira sans";
 }
 
 header {
@@ -237,6 +237,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 0.4em;
+  font-family: inherit;
 }
 
 button:hover {
@@ -488,7 +489,6 @@ main p {
   transform: rotateZ(180deg);
 }
 
-
 .collapse-button {
   animation: rotate180 1s 1s ease-in-out forwards;
   aspect-ratio: 1/1;
@@ -510,13 +510,13 @@ main p {
 
 .checklist {
   width: auto;
+  height: fit-content;
   display: block;
   margin: 0 0 1em 0;
   position: relative;
   background-color: var(--c-default);
   border-radius:0.4em;
   padding: 3em 2em;
-  min-height: 12em;
   position: relative;
 }
 
@@ -831,7 +831,7 @@ h4 {
 }
 
 p {
-  font-family: "fira Sans regular", Calibri, sans-serif;
+  font-family: 'fira sans', Calibri, sans-serif;
   max-width: 30em;
   line-height: 1.4;
 }
@@ -844,7 +844,7 @@ blockquote {
 }
 
 label {
-  font-family: "fira sans medium";
+  font-family: "fira sans";
   color: var(--c-primary);
 }
 
@@ -1095,7 +1095,7 @@ article {
   h4,
   h5,
   h6 {
-    font-family: "fira sans medium", calibri, sans-serif;
+    font-family: "fira sans", calibri, sans-serif;
     font-weight: initial;
     color: var(--c-invert);
   }

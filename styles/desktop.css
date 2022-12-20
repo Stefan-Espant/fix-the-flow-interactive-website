@@ -63,6 +63,16 @@
     position: relative;
   }
 
+  .checklist-overview-content {
+    display: block;
+  }
+
+  .checklist-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+
   .collapse-list {
     display: flex;
     align-items: center;
