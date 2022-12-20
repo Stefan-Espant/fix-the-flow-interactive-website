@@ -54,7 +54,7 @@
   font-family: "FiraSansRegular";
   font-style: normal;
   font-weight: normal;
-  src: local("fira Sans regular")
+  src: local("FiraSansRegular")
   url(font/firasans-regular.ttf) format("truetype");
 }
 
