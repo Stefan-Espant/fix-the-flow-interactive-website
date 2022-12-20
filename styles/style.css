@@ -47,7 +47,7 @@
   font-style: normal;
   font-weight: inherit;
   src:  local("fira sans medium") 
-        url(../font/firasans-medium.ttf) format("truetype");
+        url(font/firasans-medium.ttf) format("truetype");
 }
 
 @font-face {
@@ -55,7 +55,7 @@
   font-style: normal;
   font-weight: inherit;
   src: local("fira Sans regular")
-  url(../font/firasans-regular.ttf) format("truetype");
+  url(font/firasans-regular.ttf) format("truetype");
 }
 
 html {
