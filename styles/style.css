@@ -43,14 +43,19 @@
 @import url(../font/firasans-regular.ttf);
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Medium";
   font-style: normal;
   font-weight: inherit;
   src:  local("Fira Sans Medium") 
-        url(../font/firasans-medium.ttf) format("truetype"),
-        local("Fira Sans Regular")
-        url(../font/firasans-regular.ttf) format("truetype");
-        ;
+        url(../font/firasans-medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans Regular";
+  font-style: normal;
+  font-weight: inherit;
+  src: local("Fira Sans Regular")
+  url(../font/firasans-regular.ttf) format("truetype");
 }
 
 html {
