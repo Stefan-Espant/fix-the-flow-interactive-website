@@ -267,8 +267,8 @@ button:focus-visible {
   background-color: var(--c-light);
   color: var(--c-primary);
   border-radius: var(--border-radius-round);
-  bottom: 1em;
-  right: 1em;
+  bottom: 1.5em;
+  right: 1.5em;
   padding: 0em;
   display: flex;
   align-items: center;
