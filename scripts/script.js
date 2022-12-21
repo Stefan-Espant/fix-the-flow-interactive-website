@@ -93,15 +93,6 @@ function openChecklistSection(){
     collapseForms.classList.toggle('checklist-collapse')
 }
 
-// Checklist functies
-
-// Checkbox selector
-const checkboxes = document.querySelectorAll('input[type=checkbox]');
-
-//Event Listener
-checkboxes.addEventListener('click', => {
-    
-})
 
 
 
