@@ -45,7 +45,7 @@
 @font-face {
   font-family: "Fira Sans Medium";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src:  local("Fira Sans Medium") 
         url(../assets/font/firasans-medium.ttf) format("truetype");
 }
@@ -60,7 +60,8 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: scroll;
+  overflow: auto;
+  font-family: 'Fira Sans';
 }
 
 body {
