@@ -237,7 +237,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 0.4em;
-  font-family: 'Fira Sans Regular';
+  font-family: 'Fira Sans';
 }
 
 button:hover {
@@ -364,6 +364,7 @@ a {
   transform-origin: center;
   padding: 0.8em 1.2em;
   cursor: pointer;
+  font-family: 'fira sans','calibri', sans-serif;
 }
 
 a:hover {
@@ -831,7 +832,7 @@ h4 {
 }
 
 p {
-  font-family: 'Fira Sans Regular', Calibri, sans-serif;
+  font-family: 'Fira Sans', Calibri, sans-serif;
   max-width: 30em;
   line-height: 1.4;
 }
@@ -844,7 +845,7 @@ blockquote {
 }
 
 label {
-  font-family:'Fira Sans Regular';
+  font-family:'Fira Sans';
   color: var(--c-primary);
 }
 
