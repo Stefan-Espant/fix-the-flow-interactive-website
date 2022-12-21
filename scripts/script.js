@@ -70,13 +70,26 @@ function Scrollback_topfunction() {
   }
 
 
-  //Checklist 
-const collapseButton = document.querySelector('.collapse-button')
-const collapseForm = document.querySelector('.checklist-overview')
+//Checklist 
+const collapseButtons = document.querySelectorAll('.collapse-button')
+const collapseForms = document.querySelectorAll('.checklist-overview')
 
-collapseButton.addEventListener('click', openChecklistSection)
+collapseButtons.forEach((collapseButton) => {
+    collapseButton.addEventListener('click', function() {
+        const parentElement = this.closest('.checklist-overview-content');
+        const targetElement = parentElement.querySelector('.checklist-overview');
+        const btnElement = parentElement.querySelector('.collapse-button')
+
+        targetElement.classList.toggle('checklist-collapse')
+        btnElement.classList.toggle('rotate180')
+
+        openChecklistSection()
+        
+        console.log('hallo')
+    })
+
+});
 
 function openChecklistSection(){
-    collapseForm.classList.toggle('checklist-collapse')
-    collapseButton.classList.toggle('rotate180')
+    collapseForms.classList.toggle('checklist-collapse')
 }

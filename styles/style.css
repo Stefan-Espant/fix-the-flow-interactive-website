@@ -476,7 +476,7 @@ main a {
 
 main p {
   color: var(--c-invert);
-  margin: 1em;
+  margin: 0.4em 0em 1.2em 1.2em
 }
 
 
@@ -508,7 +508,30 @@ main p {
 
 .collapse-content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.a-checklist {
+  color: var(--c-succes);
+}
+
+.a-checklist:hover {
+  background-color: rgba(37, 174, 147, 0.2);
+}
+
+.a-checklist:focus {
+  outline: 0.2em solid var(--c-info);
+  border-radius: var(--border-radius-default);
+  color: var(--c-info);
+} 
+
+.a-checklist:focus-visible {
+  outline: 0.2em solid var(--c-info);
+  border-radius: var(--border-radius-default);
+  color: var(--c-info);
+} 
+
 
 .checklist {
   width: auto;
@@ -524,7 +547,6 @@ main p {
 
 .checklist-content {
   display: block;
-  min-height: 6em;
   transition: 0.8s ease;
 }
 
@@ -843,6 +865,7 @@ blockquote {
   padding-left: 1em;
   border-left: 1em solid var(--c-accent-primary);
   color: var(--c-invert);
+  font-style: italic;
 }
 
 label {
