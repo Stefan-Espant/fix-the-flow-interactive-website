@@ -65,6 +65,7 @@
 
   .checklist-overview-content {
     display: block;
+    margin: 0;
   }
 
   .checklist-content {

@@ -1162,9 +1162,20 @@ article {
   fieldset {
     width: 33vw;
   }
-label {
-  color: var(--c-invert);
-}
+
+  label {
+    color: var(--c-invert);
+  }
+
+  /* Checklist */
+  .collapse-button svg {
+    fill: var(--c-light);
+  }
+
+  .a-checklist {
+    color: var(--c-invert);
+  }
+
 }
 
 
