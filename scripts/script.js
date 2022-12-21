@@ -50,7 +50,7 @@ function switchSections(){
 // Back to top button selecteren
 const backToTopButton = document.querySelector('.back-2-top')
 
-// Whenever end users scroll down 10px from the beginning of the web page, then back to top button visible
+// Whenever end users scroll down 10px from the beginning of the web page, then back to top button is visible
 window.onscroll = function() {
     scrollfunction()
 };
@@ -85,7 +85,6 @@ collapseButtons.forEach((collapseButton) => {
 
         openChecklistSection()
         
-        console.log('hallo')
     })
 
 });
@@ -93,3 +92,17 @@ collapseButtons.forEach((collapseButton) => {
 function openChecklistSection(){
     collapseForms.classList.toggle('checklist-collapse')
 }
+
+// Checklist functies
+
+// Checkbox selector
+const checkboxes = document.querySelectorAll('input[type=checkbox]');
+
+//Event Listener
+checkboxes.addEventListener('click', => {
+    
+})
+
+
+
+

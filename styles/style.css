@@ -7,7 +7,7 @@
   --c-accent-primary: #eee;
   --c-accent-secundary: #888;
   --c-accent-tetriary: #444;
-  --c-invert: #222;
+  --c-invert: #444;
   --c-alert: #E30059;
   --c-warning: #FFD05F;
   --c-succes: #25AE93;
@@ -575,7 +575,7 @@ main p {
 }
 
 .checklist-overview p {
-  margin: 0 0 1em 1.2em;
+  margin: 0 0 1em 1.8em;
 }
 
 .checklist-collapse {
@@ -606,18 +606,6 @@ main p {
 .content-item h3 {
   color: var(--c-primary);
   margin-top: 1em;
-}
-
-input[type="checkbox"]::checked {
-  content:'s';
-  background-color: var(--c-primary);
-  transform: scale(120%);
-  margin: 0em 0.8em 0em -0.8em;
-}
-
-input[type="checkbox"]:focus-within {  
-  outline: 0.2em solid var(--c-info);
-  border-radius: 1em;
 }
 
 #desktop {
@@ -883,6 +871,69 @@ blockquote {
 label {
   font-family:'Fira Sans';
   color: var(--c-primary);
+}
+
+/* Settings for a custom checkbox */
+
+[type="checkbox"] {
+  opacity: 0;
+}
+
+[type="checkbox"] + label {
+  position: relative;
+  cursor:alias;
+  pointer-events: none;
+  display: inline-block;
+}
+
+[type="checkbox"] + label::before {
+  content:'';
+  position: absolute;
+  top: 0.2em;
+  left: -1.5em;
+  width: 0.8em;
+  aspect-ratio: 1/1;
+  outline: 0.16em solid var(--c-invert);
+  background-color: var(--c-default);
+  border-radius: var(--border-radius-min);
+}
+
+[type="checkbox"]:hover + label::before {
+  outline: 0.14em solid var(--c-invert);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+[type="checkbox"]:checked + label::after {
+  content:'';
+  position: absolute;
+  top: 0.2em;
+  left: -1.5em;
+  width: 0.8em;
+  aspect-ratio: 1/1;
+  outline: 0.12em solid var(--c-succes);
+  background-color: var(--c-succes);
+  border-radius: var(--border-radius-min);
+  animation: checkbox 1s ease-in-out;
+}
+
+@keyframes checkbox {
+  0% {
+    transform: scale(0.1);
+    transform: rotate(-90deg);
+    opacity: 1;
+    outline: 0.16em solid var(--c-succes);
+  }
+
+  66% {
+    transform: scale(0.4);
+    border-radius: var(--border-radius-round);
+  }
+
+  100% {
+    transform: scale(0.5), rotate(0deg);
+    opacity: 1;
+    outline: 0.16em solid var(--c-succes);
+  }
 }
 
 strong {
@@ -1186,12 +1237,20 @@ article {
     display: block;
   }
 
+  form input {
+    margin: 0.4em;
+  }
+
   fieldset {
     width: 33vw;
   }
 
   label {
     color: var(--c-invert);
+  }
+
+  [type="checkbox"] + label::before {
+    outline: 0.2em solid var(--c-accent-tetriary);
   }
 
   /* Checklist */
