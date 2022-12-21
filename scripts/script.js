@@ -85,6 +85,7 @@ collapseButtons.forEach((collapseButton) => {
 
         openChecklistSection()
         
+        console.log('hallo')
     })
 
 });
