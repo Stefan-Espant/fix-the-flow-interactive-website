@@ -67,6 +67,7 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
+  overflow: auto;
   background-color: var(--c-accent-primary);
   font-size: 100%;
   font-family: 'Fira Sans';
@@ -89,9 +90,9 @@ footer::before {
   content: "";
   display: block;
   width: 100vw;
-  height: 3vh;
+  height: 2em;
   background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
-  margin-top: -3vh;
+  margin-top: -2em;
 }
 
 footer div {
@@ -115,8 +116,9 @@ p {
 }
 
 .sticky {
-  position: fixed;
+  position: static;
   bottom: 0;
+  right:0;
 }
 
 .footer-links a {
@@ -717,6 +719,7 @@ li {
 
 .ui-settings svg {
   fill: var(--c-primary);
+  display: flex;
 }
 
 .ui-settings svg:focus {
@@ -1141,6 +1144,10 @@ article {
     color: var(--c-invert);
   }
 
+  strong {
+    color: var(--c-light);
+  }
+
   .content-item h1,
   h2,
   h3,
@@ -1149,6 +1156,10 @@ article {
   h6,
   i {
     color: var(--c-light);
+  }
+
+  .content-item h1, h2, h3, h4, h5, h6, i {
+    color: var(--c-invert);
   }
 
   .content-item h3 {
@@ -1192,30 +1203,18 @@ article {
     color: var(--c-invert);
   }
 
-}
-
-
-
-@media (max-height: 800px) {
-  
-  footer {
-    position: static;
+  .checklist h2 {
+    color: var(--c-invert);
   }
 
+}
+
+@media (min-height: 900px) {
+  
   .sticky {
     position: fixed;
     bottom: 0;
-    right: 0;
-  }
-
-}
-
-@media (min-height: 800px) {
-  
-  /* footer {
-    position: absolute;
-    bottom: 0;
     left:0;
-  } */
+  }
 
 }

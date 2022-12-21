@@ -250,6 +250,7 @@
   .folder {
     min-height: 25em;
     padding: 1.6em 1em;
+    margin-bottom: 3em;
   }
 
 }
