@@ -68,7 +68,7 @@ body {
   min-height: 100vh;
   background-color: var(--c-accent-primary);
   font-size: 100%;
-  font-family: 'Fira Sans Regular';
+  font-family: 'Fira Sans';
 }
 
 header {
@@ -793,7 +793,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Sans Medium", "Calibri", sans-serif;
+  font-family: "Fira Sans", "Calibri", sans-serif;
   font-weight: initial;
   color: var(--c-primary);
 }
@@ -1096,8 +1096,8 @@ article {
   h4,
   h5,
   h6 {
-    font-family: "Fira Sans Medium", calibri, sans-serif;
-    font-weight: initial;
+    font-family: "Fira Sans", calibri, sans-serif;
+    font-weight: 500;
     color: var(--c-invert);
   }
 
