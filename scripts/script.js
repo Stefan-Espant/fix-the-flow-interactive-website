@@ -50,7 +50,7 @@ function switchSections(){
 // Back to top button selecteren
 const backToTopButton = document.querySelector('.back-2-top')
 
-// Whenever end users scroll down 10px from the beginning of the web page, then back to top button is visible
+// Whenever end users scroll down 10px from the beginning of the web page, then back to top button visible
 window.onscroll = function() {
     scrollfunction()
 };
@@ -93,8 +93,3 @@ collapseButtons.forEach((collapseButton) => {
 function openChecklistSection(){
     collapseForms.classList.toggle('checklist-collapse')
 }
-
-
-
-
-
