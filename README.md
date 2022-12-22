@@ -14,7 +14,8 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md) -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-<img width="1512" alt="Schermafbeelding 2022-12-09 om 12 18 34" src="https://user-images.githubusercontent.com/89298385/206691565-adc4f474-662a-4977-8756-2e5ac7fd0336.png">
+<img width="1512" alt="Schermafbeelding 2022-12-09 om 12 18 34" src="https://user-images.githubusercontent.com/89298385/206691565-adc4f474-662a-4977-8756-2e5ac7fd0336.png">![Schermafbeelding 2022-12-22 om 14 40 43](https://user-images.githubusercontent.com/89298385/209146597-6329c576-35de-4919-8204-fd62b793a694.png)
+
 
 https://stefan-espant.github.io/fix-the-flow-interactive-website/
 
