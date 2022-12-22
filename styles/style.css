@@ -967,15 +967,15 @@ label {
 }
 
 [type="checkbox"]:checked + label::after {
-  content:'';
+  content: '';
   position: absolute;
-  top: 0.2em;
-  left: -1.5em;
-  width: 0.8em;
+  top: 0.4em;
+  left: -1.3em;
+  width: 0.4em;
   aspect-ratio: 1/1;
   outline: 0.12em solid var(--c-succes);
   background-color: var(--c-succes);
-  border-radius: var(--border-radius-min);
+  border-radius: 0.05em;
   animation: checkbox 1s ease-in-out;
 }
 
@@ -1343,10 +1343,25 @@ article {
 
 }
 
+@media (max-height: 900px) {
+  .subject {
+    display: inline-block;
+    margin: 4em 0;
+  }
 
+  footer {
+    position: static;
+    bottom: 0;
+    left:0;
+  }
+}
 
 @media (min-height: 900px) {
-  
+  .subject {
+    display: inline-block;
+    margin: 4em 0 16em;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
@@ -1356,6 +1371,12 @@ article {
 }
 
 @media (min-height: 1200px) {
+
+  .subject {
+    display: inline-block;
+    margin: 4em 0 16em;
+  }
+
   .sticky {
     position: fixed;
     bottom: 0;

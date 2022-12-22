@@ -93,3 +93,4 @@ collapseButtons.forEach((collapseButton) => {
 function openChecklistSection(){
     collapseForms.classList.toggle('checklist-collapse')
 }
+
