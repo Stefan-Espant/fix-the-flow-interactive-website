@@ -15,6 +15,7 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md) -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 <img width="1512" alt="Schermafbeelding 2022-12-09 om 12 18 34" src="https://user-images.githubusercontent.com/89298385/209146597-6329c576-35de-4919-8204-fd62b793a694.png">
+<img width="1512" alt="Schermafbeelding 2022-12-09 om 12 18 34" src="https://user-images.githubusercontent.com/89298385/209147022-850eb4a9-822b-4764-b730-666776289e04.png">
 https://stefan-espant.github.io/fix-the-flow-interactive-website/
 
 ## Kenmerken
