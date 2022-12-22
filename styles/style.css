@@ -292,6 +292,34 @@ button:focus-visible {
   border-radius: var(--border-radius-default);
 }
 
+.back-2-top:focus {
+  background-color: var(--c-light);
+  color: var(--c-light);
+  border-radius: var(--border-radius-default);
+}
+
+.back-2-top:focus svg {
+  fill: var(--c-info);
+  transition: 0.4s ease-in-out;
+}
+
+.back-2-top:focus-within {
+  background-color: var(--c-light);
+  color: var(--c-light);
+  border-radius: var(--border-radius-default);
+}
+
+.back-2-top:active {
+  background-color: var(--c-light);
+  color: var(--c-light);
+  border-radius: var(--border-radius-default);
+}
+
+.back-2-top:active svg {
+  fill: var(--c-info);
+  transition: 0.4s ease-in-out;
+}
+
 .back-2-top:hover svg {
   fill: var(--c-info);
   transition: 0.4s ease-in-out;
@@ -493,7 +521,12 @@ main p {
 
 .collapse {
   margin: 1em 0;
+  padding: 1em;
   transition: 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--c-accent-primary);
 }
 
 .rotate180 {
@@ -510,6 +543,7 @@ main p {
 
 .collapse-button:hover {
   background-color: #b9006033;
+  width: fit-content;
   border-radius: 100%;
   transition: 0.4s;
   aspect-ratio: 1/1;
@@ -572,6 +606,10 @@ main p {
   transform: scaleY(1);
   transform-origin: top;
   transition: 0.4s ease-in;
+}
+
+.checklist-overview span {
+  display: flex;
 }
 
 .checklist-overview p {
@@ -1305,7 +1343,9 @@ article {
 
 }
 
-@media (min-height: 1200px) {
+
+
+@media (min-height: 900px) {
   
   footer {
     position: fixed;
@@ -1313,4 +1353,12 @@ article {
     left:0;
   }
 
+}
+
+@media (min-height: 1200px) {
+  .sticky {
+    position: fixed;
+    bottom: 0;
+    left:0;
+  }
 }

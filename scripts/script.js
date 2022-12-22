@@ -73,6 +73,7 @@ function Scrollback_topfunction() {
 //Checklist 
 const collapseButtons = document.querySelectorAll('.collapse-button')
 const collapseForms = document.querySelectorAll('.checklist-overview')
+const chechlistBoxes = document.querySelectorAll('[type="checkbox"]')
 
 collapseButtons.forEach((collapseButton) => {
     collapseButton.addEventListener('click', function() {

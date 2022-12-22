@@ -105,7 +105,9 @@
 }
 
 .checklist-content {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: 0.8s ease;
 }
 
