@@ -513,7 +513,7 @@ main a {
 
 main p {
   color: var(--c-invert);
-  margin: 0em 0em 1.2em 1.2em
+  margin: 0em 0em 1.6em 1.6em
 }
 
 
@@ -538,7 +538,6 @@ main p {
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
-
 }
 
 .collapse-button:hover {
@@ -547,6 +546,13 @@ main p {
   border-radius: 100%;
   transition: 0.4s;
   aspect-ratio: 1/1;
+}
+
+.collapse-button svg {
+  fill: var(--c-primary);
+  height: 1em;
+  margin: auto;
+  display: flex;
 }
 
 .collapse-content {
@@ -644,6 +650,7 @@ main p {
 .content-item h3 {
   color: var(--c-primary);
   margin-top: 1em;
+  display: flex;
 }
 
 #desktop {
@@ -940,6 +947,8 @@ label {
 [type="checkbox"] {
   opacity: 0;
   transform: translateX(-0.5em);
+  width: 1em;
+  aspect-ratio: 1/1;
 }
 
 [type="checkbox"] + label {
@@ -969,9 +978,9 @@ label {
 [type="checkbox"]:checked + label::after {
   content: '';
   position: absolute;
-  top: 0.4em;
-  left: -1.3em;
-  width: 0.4em;
+  top: 0.2em;
+  left: -1.5em;
+  width: 0.8em;
   aspect-ratio: 1/1;
   outline: 0.12em solid var(--c-succes);
   background-color: var(--c-succes);
@@ -1080,6 +1089,7 @@ strong {
 /* Folder section */
 .subject {
   display: block;
+  margin: auto;
 }
 
 .subject-img {
@@ -1138,12 +1148,14 @@ strong {
 }
 
 .content-item div {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
-.content svg {
-  margin: 0 0 -0.1em 0;
+
+
+.content-item svg {
+  margin: 0 0.4em -0.1em 0;
   fill: var(--c-primary);
   height: 1em;
 }
@@ -1359,10 +1371,16 @@ article {
 @media (min-height: 900px) {
   .subject {
     display: inline-block;
-    margin: 4em 0 16em;
+    margin: 4em auto 16em;
   }
 
   footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+  }
+
+  sticky {
     position: fixed;
     bottom: 0;
     left:0;
@@ -1374,7 +1392,7 @@ article {
 
   .subject {
     display: inline-block;
-    margin: 4em 0 16em;
+    margin: 4em auto 16em;
   }
 
   .sticky {
