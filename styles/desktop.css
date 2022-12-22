@@ -22,6 +22,10 @@
     color: var(--c-invert);
   }
 
+  .categorie:hover {
+    transform: translateX(1em);
+  }
+
   /* layout */
 
   main {
@@ -33,6 +37,16 @@
   main a {
     padding: 0.8em;
     display: inline-block;
+  }
+
+  .ui-settings a:hover {
+    transform: translateY(-0.2em);
+    transition: 0.4s ease-in-out;
+  }
+
+  .ui-settings button:hover {
+    transform: translateY(-0.4em);
+    transition: 0.4s ease-in-out;
   }
 
   /* Checklist */
@@ -82,6 +96,10 @@
 
   .collapse-list a {
     margin: auto 0;
+  }
+
+  .a-checklist:hover {
+    transform: translateX(-0.4em);
   }
 
   .checklist h2 {
