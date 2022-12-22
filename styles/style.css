@@ -893,13 +893,13 @@ label {
   left: -1.5em;
   width: 0.8em;
   aspect-ratio: 1/1;
-  outline: 0.16em solid var(--c-invert);
+  outline: 0.16em solid var(--c-succes);
   background-color: var(--c-default);
   border-radius: var(--border-radius-min);
 }
 
 [type="checkbox"]:hover + label::before {
-  outline: 0.14em solid var(--c-invert);
+  outline: 0.14em solid var(--c-succes);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -925,8 +925,10 @@ label {
   }
 
   66% {
-    transform: scale(0.4);
+    transform: scale(0.6);
     border-radius: var(--border-radius-round);
+    background-color: rgb(34, 208, 173);
+    outline: rgb(34, 208, 173);
   }
 
   100% {
@@ -1268,9 +1270,9 @@ article {
 
 }
 
-@media (min-height: 900px) {
+@media (min-height: 1200px) {
   
-  .sticky {
+  footer {
     position: fixed;
     bottom: 0;
     left:0;

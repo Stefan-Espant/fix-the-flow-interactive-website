@@ -123,9 +123,6 @@
     display: inline-block;
     margin: 0;
     background-color: var(--c-primary);
-    bottom: 0;
-    right: 0;
-    position: static;
   }
 
   .footer-sticky {
