@@ -24,7 +24,7 @@ allButtons.forEach(item => {
 function fontSize() {
     const textincrease = document.querySelector("#fontIncrease")
     textincrease.classList.toggle('text-large')
-    textincrease.style.fontSize = textincrease.style.fontSize === '200%' ? '100%' : '200%'
+    // textincrease.style.fontSize = textincrease.style.fontSize === '200%' ? '100%' : '200%'
 };
 
 const contrastTrigger = document.querySelector('.contrast-trigger');
@@ -85,7 +85,6 @@ collapseButtons.forEach((collapseButton) => {
 
         openChecklistSection()
         
-        console.log('hallo')
     })
 
 });

@@ -816,7 +816,7 @@ h4,
 h5,
 h6 {
   font-family: "Fira Sans", "Calibri", sans-serif;
-  font-weight: initial;
+  font-weight: 500;
   color: var(--c-primary);
 }
 
@@ -870,13 +870,38 @@ blockquote {
 
 label {
   font-family:'Fira Sans';
+  font-weight: 500;
   color: var(--c-primary);
+}
+
+/* Animation to fade-in titels */
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 0.9s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+
+  66% {
+    transform: translateY(-0.4em);
+  }
+
+  100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
 }
 
 /* Settings for a custom checkbox */
 
 [type="checkbox"] {
   opacity: 0;
+  transform: translateX(-0.5em);
 }
 
 [type="checkbox"] + label {
@@ -1130,6 +1155,16 @@ article {
 
 .text200 {
   font-size: 200%;
+}
+
+.text-large {
+  font-size: 200%;
+}
+
+.text-large [type="checkbox"] {
+  width: 2em;
+  aspect-ratio: 1/1;
+  transform: translateX(-1em);
 }
 
 .dark-theme {
