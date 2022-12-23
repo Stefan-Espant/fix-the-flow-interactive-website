@@ -253,6 +253,10 @@
     margin-bottom: 3em;
   }
 
+  .folder .text-large {
+    padding: 0.5em;
+  }
+
 }
 
 @media (min-width: 441px) and (max-width: 767px) {
