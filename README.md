@@ -20,7 +20,7 @@ https://stefan-espant.github.io/fix-the-flow-interactive-website/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
-De interactie die ik had ontworpen, ontwikkeld en getest was een back to top button die verschijnt wanneer de gebruiker een stuk naar beneden scrolt. 
+De interactie die ik had ontworpen, ontwikkeld en getest was een back to top button die verschijnt wanneer de gebruiker een stuk naar beneden scrolt. Zodra de gebruiker op de knop drukt, brengt ie de gebruiker terug naar het begin en verdwijnt dan uit het zicht.
 
 ### html
 ```html
